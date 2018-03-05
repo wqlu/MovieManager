@@ -17,6 +17,7 @@
  
  	<!-- 对静态资源放行  -->
 	<mvc:resources location="/assets/" mapping="/assets/**"/>
+	<mvc:resources mapping="/js/**" location="/js/"/>
 
 	<!-- 视图解释器 -->
 	<bean

@@ -65,7 +65,7 @@
 		<div class="navbar-default sidebar" role="navigation">
 			<div class="sidebar-nav navbar-collapse">
 				<ul class="nav" id="side-menu">
-					<li><a href="movieManage.action" class="active"><i
+					<li><a href="list.action" class="active"><i
 							class="fa fa-edit fa-fw"></i> 电影管理</a></li>
 					<li><a href="userManage.action"><i
 							class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
@@ -84,11 +84,11 @@
 			<!-- /.row -->
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<form class="form-inline" action="${pageContext.request.contextPath }/movieManage/list.action" method="post">
-						<div class="form-group">
+					<form class="form-inline" action="${pageContext.request.contextPath }/movie/list.action" method="post">
+						<!-- <div class="form-group"> -->
 							<label for="moviename">电影名称</label>
 							<input type="text" class="form-control" id="moviename" value="${moviename }" name="moviename">
-						</div>
+						<!-- </div> -->
 <%--						<div class="form-group">
 							<label for="category">电影类型</label>
 							<select	class="form-control" id="category" placeholder="电影类型" name="category">
@@ -98,16 +98,16 @@
 								</c:forEach>
 							</select>
 						</div>--%>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="nation">所属行业</label>
 							<select	class="form-control" id="nation"  name="custIndustry">
 								<option value="">--请选择--</option>
-								<c:forEach items="${industryType}" var="item">
-									<option value="${item.dict_id}"<c:if test="${item.dict_id == custIndustry}"> selected</c:if>>${item.dict_item_name }</option>
-								</c:forEach>
+								<%--<c:forEach items="${industryType}" var="item">--%>
+									<%--<option value="${item.dict_id}"<c:if test="${item.dict_id == custIndustry}"> selected</c:if>>${item.dict_item_name }</option>--%>
+								<%--</c:forEach>--%>
 							</select>
-						</div>
-						<div class="form-group">
+						</div> -->
+<!-- 						<div class="form-group">
 							<label for="custLevel">客户级别</label>
 							<select	class="form-control" id="custLevel" name="custLevel">
 								<option value="">--请选择--</option>
@@ -115,7 +115,7 @@
 									<option value="${item.dict_id}"<c:if test="${item.dict_id == custLevel}"> selected</c:if>>${item.dict_item_name }</option>
 								</c:forEach>
 							</select>
-						</div>
+						</div> -->
 						<button type="submit" class="btn btn-primary">查询</button>
 					</form>
 				</div>
@@ -123,41 +123,42 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="panel panel-default">
-						<div class="panel-heading">客户信息列表</div>
+						<div class="panel-heading">电影管理信息</div>
 						<!-- /.panel-heading -->
 						<table class="table table-bordered table-striped">
 							<thead>
 								<tr>
-									<th>ID</th>
-									<th>客户名称</th>
-									<th>客户来源</th>
-									<th>客户所属行业</th>
-									<th>客户级别</th>
-									<th>固定电话</th>
-									<th>手机</th>
-									<th>操作</th>
+									<th>电影ID</th>
+									<th>电影名称</th>
+									<th>上映年份</th>
+									<th>国家/地区</th>
+									<th>导演</th>
+									<th>主演</th>
+									<th>编剧</th>
+									<th>海报</th>
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${page.rows}" var="row">
-									<tr>
-										<td>${row.cust_id}</td>
-										<td>${row.cust_name}</td>
-										<td>${row.cust_source}</td>
-										<td>${row.cust_industry}</td>
-										<td>${row.cust_level}</td>
-										<td>${row.cust_phone}</td>
-										<td>${row.cust_mobile}</td>
-										<td>
-											<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerEditDialog" onclick="editCustomer(${row.cust_id})">修改</a>
-											<a href="#" class="btn btn-danger btn-xs" onclick="deleteCustomer(${row.cust_id})">删除</a>
-										</td>
-									</tr>
-								</c:forEach>
+							<c:forEach items="${page.rows}" var="row">
+								<tr>
+									<td>${row.movieid}</td>
+									<td>${row.moviename}</td>
+									<td>${row.showyear}</td>
+									<td>${row.nation}</td>
+									<td>${row.director}</td>
+									<td>${row.leadactors}</td>
+									<td>${row.screenwriter}</td>
+									<td>${row.picture}</td>
+									<td>
+										<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerEditDialog" onclick="editCustomer(${row.movieid})">修改</a>
+										<a href="#" class="btn btn-danger btn-xs" onclick="deleteMovie(${row.movieid})">删除</a>
+									</td>	
+								</tr>
+							</c:forEach>
 							</tbody>
 						</table>
 						<div class="col-md-12 text-right">
-							<itheima:page url="${pageContext.request.contextPath }/customer/list.action" />
+							<itheima:page url="${pageContext.request.contextPath }/movie/list.action" />
 						</div>
 						<!-- /.panel-body -->
 					</div>
@@ -307,9 +308,9 @@
 			});
 		}
 		
-		function deleteCustomer(id) {
+		function deleteMovie(id) {
 			if(confirm('确实要删除该客户吗?')) {
-				$.post("<%=basePath%>customer/delete.action",{"id":id},function(data){
+				$.post("<%=basePath%>movie/delete.action",{"id":id},function(data){
 					alert("客户删除更新成功！");
 					window.location.reload();
 				});

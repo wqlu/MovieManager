@@ -1,8 +1,9 @@
 package com.dream.po;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Movie {
+public class Movie implements Serializable{
     private Integer movieid;
 
     private String moviename;
@@ -18,6 +19,25 @@ public class Movie {
     private String screenwriter;
 
     private String picture;
+
+    public Integer getStart() {
+        return start;
+    }
+
+    public void setStart(Integer start) {
+        this.start = start;
+    }
+
+    public Integer getRows() {
+        return rows;
+    }
+
+    public void setRows(Integer rows) {
+        this.rows = rows;
+    }
+
+    private Integer start;
+    private Integer rows;
 
     public Integer getMovieid() {
         return movieid;

@@ -72,6 +72,8 @@
   <sql id="Base_Column_List" >
     movieid, moviename, showyear, nation, director, leadactors, screenwriter, picture
   </sql>
+  
+
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.dream.po.MovieExample" >
     select
     <if test="distinct" >
