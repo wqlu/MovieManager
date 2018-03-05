@@ -25,9 +25,9 @@ public class MovieController {
 
     // 客户列表
     @RequestMapping(value = "/movie/list")
-    public String list(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="5")Integer rows, Model model) {
+    public String list(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="5")Integer rows, String moviename, Model model) {
 
-        Page<Movie> movies = movieService.findMovieList(page, rows);
+        Page<Movie> movies = movieService.findMovieList(page, rows, moviename);
         model.addAttribute("page", movies);
         //客户来源
 //        List<BaseDict> fromType = systemService.findBaseDictListByType(FROM_TYPE);
@@ -39,7 +39,7 @@ public class MovieController {
 //        model.addAttribute("industryType", industryType);
 //        model.addAttribute("levelType", levelType);
         //参数回显
-//        model.addAttribute("custName", custName);
+        model.addAttribute("moviename", moviename);
 //        model.addAttribute("custSource", custSource);
 //        model.addAttribute("custIndustry", custIndustry);
 //        model.addAttribute("custLevel", custLevel);

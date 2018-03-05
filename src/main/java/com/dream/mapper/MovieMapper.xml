@@ -73,6 +73,36 @@
     movieid, moviename, showyear, nation, director, leadactors, screenwriter, picture
   </sql>
   
+  <sql id="selectMovieListWhere">
+    <where>
+        <if test="moviename != null" >
+          moviename like "%"#{moviename}"%"
+        </if>
+      </where>
+  </sql>
+  <select id="selectMovieList" parameterType="movie" resultType="movie">
+    SELECT
+      movieid,
+      moviename,
+      showyear,
+      nation,
+      director,
+      leadactors,
+      screenwriter,
+      picture
+    FROM
+      movie 
+    
+    <include refid="selectMovieListWhere"/>
+    <if test="start !=null and rows != null">
+      limit #{start},#{rows}
+    </if>
+  </select>
+  <select id="selectMovieListCount" parameterType="movie" resultType="int">
+    select count(*)
+    from movie
+    <include refid="selectMovieListWhere"/>
+  </select>
 
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.dream.po.MovieExample" >
     select

@@ -28,4 +28,6 @@ public interface MovieMapper {
 
     int updateByPrimaryKey(Movie record);
 
+    List<Movie> selectMovieList(Movie movie);
+    Integer selectMovieListCount(Movie movie);
 }
