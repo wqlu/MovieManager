@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="dream" uri="http://dream.com/common/"%>
 <%
 	String path = request.getContextPath();
@@ -36,6 +37,7 @@
 	type="text/css">
 <link href="../../assets/css/boot-crm.css" rel="stylesheet"
 	type="text/css">
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,29 +86,21 @@
 			<!-- /.row -->
 			<div class="panel panel-default">
 				<div class="panel-body">
+
 					<form class="form-inline" action="${pageContext.request.contextPath }/movie/list.action" method="post">
 						<!-- <div class="form-group"> -->
 							<label for="moviename">电影名称</label>
 							<input type="text" class="form-control" id="moviename" value="${moviename }" name="moviename">
-						<!-- </div> -->
-<%--						<div class="form-group">
-							<label for="category">电影类型</label>
-							<select	class="form-control" id="category" placeholder="电影类型" name="category">
+						<div class="form-group">
+							<label for="movieCategory">电影类型</label> 
+							<select	class="form-control" id="movieCategory" placeholder="电影类型" name="categorylist">
 								<option value="">--请选择--</option>
-								<c:forEach items="${category}" var="item">
-									<option value="${item.dict_id}"<c:if test="${item.dict_id == custSource}"> selected</c:if>>${item.dict_item_name }</option>
+								<c:forEach items="${list}" var="ll">
+									<option value="${ll.categoryid}"<c:if test="${ll.categoryid == category}"> selected</c:if>>${ll.category }</option>
 								</c:forEach>
 							</select>
-						</div>--%>
-						<!-- <div class="form-group">
-							<label for="nation">所属行业</label>
-							<select	class="form-control" id="nation"  name="custIndustry">
-								<option value="">--请选择--</option>
-								<%--<c:forEach items="${industryType}" var="item">--%>
-									<%--<option value="${item.dict_id}"<c:if test="${item.dict_id == custIndustry}"> selected</c:if>>${item.dict_item_name }</option>--%>
-								<%--</c:forEach>--%>
-							</select>
-						</div> -->
+						</div>
+						
 <!-- 						<div class="form-group">
 							<label for="custLevel">客户级别</label>
 							<select	class="form-control" id="custLevel" name="custLevel">
@@ -117,6 +111,7 @@
 							</select>
 						</div> -->
 						<button type="submit" class="btn btn-primary">查询</button>
+						<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerEditDialog" onclick="editCustomer(${row.movieid})">添加电影</a>
 					</form>
 				</div>
 			</div>
@@ -158,7 +153,7 @@
 							</tbody>
 						</table>
 						<div class="col-md-12 text-right">
-							<itheima:page url="${pageContext.request.contextPath }/movie/list.action" />
+							<dream:page url="${pageContext.request.contextPath }/movie/list.action" />
 						</div>
 						<!-- /.panel-body -->
 					</div>
@@ -179,85 +174,60 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel">修改客户信息</h4>
+					<h4 class="modal-title" id="myModalLabel">修改电影信息</h4>
 				</div>
 				<div class="modal-body">
 					<form class="form-horizontal" id="edit_customer_form">
-						<input type="hidden" id="edit_cust_id" name="cust_id"/>
+						<input type="hidden" id="edit_movieid" name="movieid"/>
 						<div class="form-group">
-							<label for="edit_customerName" class="col-sm-2 control-label">客户名称</label>
+							<label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_customerName" placeholder="客户名称" name="cust_name">
+								<input type="text" class="form-control" id="edit_movieName" placeholder="ccc" name="moviename">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_customerFrom" style="float:left;padding:7px 15px 0 27px;">客户来源</label> 
+							<label for="edit_showyear" class="col-sm-2 control-label">上映年份</label>
 							<div class="col-sm-10">
-								<select	class="form-control" id="edit_customerFrom" placeholder="客户来源" name="cust_source">
-									<option value="">--请选择--</option>
-									<c:forEach items="${fromType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custSource}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
+								<input type="text" class="form-control" id="edit_showyear" placeholder="yyyy-mm-hh" name="showyear">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_custIndustry" style="float:left;padding:7px 15px 0 27px;">所属行业</label>
-							<div class="col-sm-10"> 
-								<select	class="form-control" id="edit_custIndustry"  name="cust_industry">
-									<option value="">--请选择--</option>
-									<c:forEach items="${industryType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custIndustry}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="edit_custLevel" style="float:left;padding:7px 15px 0 27px;">客户级别</label>
+							<label for="edit_nation" class="col-sm-2 control-label">国家/地区</label>
 							<div class="col-sm-10">
-								<select	class="form-control" id="edit_custLevel" name="cust_level">
-									<option value="">--请选择--</option>
-									<c:forEach items="${levelType}" var="item">
-										<option value="${item.dict_id}"<c:if test="${item.dict_id == custLevel}"> selected</c:if>>${item.dict_item_name }</option>
-									</c:forEach>
-								</select>
+								<input type="text" class="form-control" id="edit_nation" placeholder="国家/地区" name="nation">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_linkMan" class="col-sm-2 control-label">联系人</label>
+							<label for="edit_director" class="col-sm-2 control-label">导演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_linkMan" placeholder="联系人" name="cust_linkman">
+								<input type="text" class="form-control" id="edit_director" placeholder="导演" name="director">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_phone" class="col-sm-2 control-label">固定电话</label>
+							<label for="edit_leadactors" class="col-sm-2 control-label">主演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_phone" placeholder="固定电话" name="cust_phone">
+								<input type="text" class="form-control" id="edit_leadactors" placeholder="主演" name="leadactors">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_mobile" class="col-sm-2 control-label">移动电话</label>
+							<label for="edit_screenwriter" class="col-sm-2 control-label">编剧</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_mobile" placeholder="移动电话" name="cust_mobile">
+								<input type="text" class="form-control" id="edit_screenwriter" placeholder="编剧" name="screenwriter">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_zipcode" class="col-sm-2 control-label">邮政编码</label>
+							<label for="edit_picture" class="col-sm-2 control-label">海报</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_zipcode" placeholder="邮政编码" name="cust_zipcode">
+								<input type="text" class="form-control" id="edit_picture" placeholder="http://xxx" name="picture">
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="edit_address" class="col-sm-2 control-label">联系地址</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_address" placeholder="联系地址" name="cust_address">
-							</div>
-						</div>
+						<input type="hidden" id="edit_start" name="start"/>
+						<input type="hidden" id="edit_rows" name="rows"/>
 					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" onclick="updateCustomer()">保存修改</button>
+					<button type="button" class="btn btn-primary" onclick="updateMovie()">保存修改</button>
 				</div>
 			</div>
 		</div>
@@ -284,25 +254,23 @@
 		function editCustomer(id) {
 			$.ajax({
 				type:"get",
-				url:"<%=basePath%>customer/edit.action",
+				url:"<%=basePath%>movie/edit.action",
 				data:{"id":id},
 				success:function(data) {   // Customer的JSON字符串传过来就行
-					$("#edit_cust_id").val(data.cust_id);
-					$("#edit_customerName").val(data.cust_name);
-					$("#edit_customerFrom").val(data.cust_source)
-					$("#edit_custIndustry").val(data.cust_industry)
-					$("#edit_custLevel").val(data.cust_level)
-					$("#edit_linkMan").val(data.cust_linkman);
-					$("#edit_phone").val(data.cust_phone);
-					$("#edit_mobile").val(data.cust_mobile);
-					$("#edit_zipcode").val(data.cust_zipcode);
-					$("#edit_address").val(data.cust_address);
+					$("#edit_movieid").val(data.movieid);
+					$("#edit_movieName").val(data.moviename);
+					$("#edit_showyear").val(data.showyear)
+					$("#edit_nation").val(data.nation)
+					$("#edit_director").val(data.director)
+					$("#edit_leadactors").val(data.leadactors);
+					$("#edit_screenwriter").val(data.screenwriter);
+					$("#edit_picture").val(data.picture);
 					
 				}
 			});
 		}
-		function updateCustomer() {
-			$.post("<%=basePath%>customer/update.action",$("#edit_customer_form").serialize(),function(data){
+		function updateMovie() {
+			$.post("<%=basePath%>movie/update.action",$("#edit_customer_form").serialize(),function(data){
 				alert("客户信息更新成功！");
 				window.location.reload();
 			});

@@ -104,6 +104,35 @@
     <include refid="selectMovieListWhere"/>
   </select>
 
+  <update id="updateMovie" parameterType="movie">
+    update movie
+    <set>
+      <if test="moviename!=null">
+        mmoviename=#{moviename},
+      </if>
+      <if test="showyear!=null">
+        showyear=#{showyear},
+      </if>
+      <if test="nation!=null">
+        nation=#{nation},
+      </if>
+      <if test="director!=null">
+        director=#{director},
+      </if>
+      <if test="leadactors!=null">
+        leadactors=#{leadactors},
+      </if>
+      <if test="screenwriter!=null">
+        screenwriter=#{screenwriter},
+      </if>
+      <if test="picture!=null">
+        picture=#{picture},
+      </if>
+      
+    </set>
+    where movieid=#{movieid}
+  </update>
+
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.dream.po.MovieExample" >
     select
     <if test="distinct" >

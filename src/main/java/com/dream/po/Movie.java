@@ -1,5 +1,8 @@
 package com.dream.po;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+//import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,6 +11,7 @@ public class Movie implements Serializable{
 
     private String moviename;
 
+    @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
     private Date showyear;
 
     private String nation;
@@ -19,6 +23,10 @@ public class Movie implements Serializable{
     private String screenwriter;
 
     private String picture;
+
+    private Integer start;
+
+    private Integer rows;
 
     public Integer getStart() {
         return start;
@@ -35,9 +43,6 @@ public class Movie implements Serializable{
     public void setRows(Integer rows) {
         this.rows = rows;
     }
-
-    private Integer start;
-    private Integer rows;
 
     public Integer getMovieid() {
         return movieid;

@@ -1,9 +1,10 @@
 package com.dream.service.impl;
 
 import com.dream.common.Page;
+import com.dream.mapper.CategoryMapper;
 import com.dream.mapper.MovieMapper;
-import com.dream.po.Movie;
-import com.dream.po.MovieExample;
+import com.dream.mapper.MoviecategoryMapper;
+import com.dream.po.*;
 import com.dream.service.MovieService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,10 @@ public class MovieServiceImpl implements MovieService{
 
     @Autowired
     private MovieMapper movieMapper;
+    @Autowired
+    private CategoryMapper categoryMapper;
+    @Autowired
+    private MoviecategoryMapper moviecategoryMapper;
 
     @Override
     public Movie getMovieById(Integer id) {
@@ -53,8 +58,28 @@ public class MovieServiceImpl implements MovieService{
         return result;
     }
 
+    // 删除电影
     @Override
     public void deleteMovie(Integer id) {
+
+        MoviecategoryExample moviecategoryExample = new MoviecategoryExample();
+        MoviecategoryExample.Criteria criteria = moviecategoryExample.createCriteria();
+        criteria.andMovieidEqualTo(id);
+        moviecategoryMapper.deleteByExample(moviecategoryExample);
         movieMapper.deleteByPrimaryKey(id);
+
+    }
+
+    @Override
+    public List<Category> selectCategory() {
+        CategoryExample example = new CategoryExample();
+        List<Category> list = categoryMapper.selectByExample(example);
+        return list;
+    }
+
+
+    @Override
+    public void updateMovie(Movie movie) {
+        movieMapper.updateMovie(movie);
     }
 }

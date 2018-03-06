@@ -1,7 +1,10 @@
 package com.dream.service;
 
 import com.dream.common.Page;
+import com.dream.po.Category;
 import com.dream.po.Movie;
+
+import java.util.List;
 
 public interface MovieService {
 
@@ -11,4 +14,8 @@ public interface MovieService {
     public Movie getMovieById(Integer id);
 
     public void deleteMovie(Integer id);
+
+    public List<Category> selectCategory();
+
+    public void updateMovie(Movie movie);
 }

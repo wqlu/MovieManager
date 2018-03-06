@@ -30,4 +30,5 @@ public interface MovieMapper {
 
     List<Movie> selectMovieList(Movie movie);
     Integer selectMovieListCount(Movie movie);
+    void updateMovie(Movie movie);
 }
