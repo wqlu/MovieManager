@@ -19,6 +19,20 @@
 	<mvc:resources location="/assets/" mapping="/assets/**"/>
 	<mvc:resources mapping="/js/**" location="/js/"/>
 
+    <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
+
+
+    <!-- 自定义参数绑定 -->
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <!-- 转换器 -->
+        <property name="converters">
+            <list>
+                <!-- 日期类型转换 -->
+                <bean class="com.dream.common.DateConverter"/>
+            </list>
+        </property>
+    </bean>
+
 	<!-- 视图解释器 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

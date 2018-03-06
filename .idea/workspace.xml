@@ -7,27 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2212f92-39ea-428b-8de2-ccd03d77d10e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/MovieController.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/MovieService.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/MovieService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dream/common/DateConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/Movie.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/Movie.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/MovieServiceImpl.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/MovieServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/controller/MovieController.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/controller/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/MovieService.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/MovieService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/po/Movie.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/po/Movie.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/impl/MovieServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/impl/MovieServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.xml" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/spring/springmvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,21 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-720">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MovieService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="340">
+              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -74,153 +63,24 @@
       <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+            <state relative-caret-position="334">
+              <caret line="89" column="34" lean-forward="false" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2508#2509#0" expanded="true" />
-                <element signature="e#2554#2555#0" expanded="true" />
+                <element signature="e#2642#2643#0" expanded="true" />
+                <element signature="e#2683#2684#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
+      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="124">
+              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding>
-                <marker date="1520335858091" expanded="true" signature="3933:3963" ph="select count... movie" />
-                <marker date="1520335858091" expanded="true" signature="4075:4682" ph="update movie... " />
-                <marker date="1520335858091" expanded="true" signature="4440:4475" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="4512:4562" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="4594:4634" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="4794:5099" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="4831:4857" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="4948:5006" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="5044:5087" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="5194:5323" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="5201:5312" ph="select from movie" />
-                <marker date="1520335858091" expanded="true" signature="5392:5475" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="5399:5464" ph="delete from " />
-                <marker date="1520335858091" expanded="true" signature="5549:5677" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="5556:5573" ph="delete from " />
-                <marker date="1520335858091" expanded="true" signature="5607:5665" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="5735:6139" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="5742:6128" ph="insert into movie... " />
-                <marker date="1520335858091" expanded="true" signature="6206:7610" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6282:6829" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6317:6347" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6383:6415" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6450:6481" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6514:6543" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6578:6609" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6646:6679" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6718:6753" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6787:6817" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6889:7598" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="6924:6974" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7010:7062" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7097:7150" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7183:7232" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7267:7318" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7355:7408" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7447:7502" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7536:7586" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7714:7851" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7721:7747" ph="select count... movie" />
-                <marker date="1520335858091" expanded="true" signature="7781:7839" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7912:8966" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7940:8851" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="7982:8049" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8092:8163" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8205:8276" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8316:8381" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8423:8492" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8536:8609" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8655:8732" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8773:8840" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="8886:8954" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="9018:9592" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="9025:9478" ph="update movie... " />
-                <marker date="1520335858091" expanded="true" signature="9512:9580" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="9671:10464" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="9678:10453" ph="update movie... " />
-                <marker date="1520335858091" expanded="true" signature="9699:10404" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="9736:9800" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="9835:9899" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="9932:9990" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="10025:10087" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="10124:10190" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="10229:10299" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="10333:10393" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="10534:10952" ph="..." />
-                <marker date="1520335858091" expanded="true" signature="10541:10941" ph="update movie... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviecategoryMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MoviecategoryMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviecategoryMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MoviecategoryMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="29" />
-              <folding>
-                <marker date="1520238246098" expanded="true" signature="3420:3541" ph="select from moviecategory" />
-                <marker date="1520238246098" expanded="true" signature="3628:3703" ph="delete from " />
-                <marker date="1520238246098" expanded="true" signature="3803:3828" ph="delete from " />
-                <marker date="1520238246098" expanded="true" signature="4005:4179" ph="insert into moviecategory... " />
-                <marker date="1520238246098" expanded="true" signature="5026:5060" ph="select count... moviecategory" />
-                <marker date="1520238246098" expanded="true" signature="5783:5968" ph="update movie... " />
-                <marker date="1520238246098" expanded="true" signature="6176:6465" ph="update movie... " />
-                <marker date="1520238246098" expanded="true" signature="6561:6728" ph="update movie... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movieManage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="268" column="17" lean-forward="true" selection-start-line="268" selection-start-column="17" selection-end-line="268" selection-end-column="17" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#6247#6254#1#HTML" expanded="true" />
-                <marker date="1520337142520" expanded="true" signature="6799:7044" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="6908:7031" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7075:7310" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7183:7297" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7341:7576" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7448:7563" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7607:7848" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7716:7835" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7879:8126" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="7990:8113" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="8157:8397" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="8263:8384" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="8566:8750" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="9356:10327" ph="..." />
-                <marker date="1520337142520" expanded="true" signature="9386:9919" ph="{...}" />
-                <marker date="1520337142520" expanded="true" signature="9398:9913" ph="{&quot;type&quot;: &quot;get&quot;...}" />
-                <marker date="1520337142520" expanded="true" signature="9505:9908" ph="{...}" />
-                <marker date="1520337142520" expanded="true" signature="9945:10109" ph="{...}" />
-                <marker date="1520337142520" expanded="true" signature="10043:10103" ph="{...}" />
-                <marker date="1520337142520" expanded="true" signature="10140:10317" ph="{...}" />
-                <marker date="1520337142520" expanded="true" signature="10171:10313" ph="{...}" />
-                <marker date="1520337142520" expanded="true" signature="10243:10306" ph="{...}" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -229,20 +89,29 @@
       <file leaf-file-name="MovieMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
+            <state relative-caret-position="374">
               <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
+      <file leaf-file-name="MovieMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="102">
+              <caret line="134" column="24" lean-forward="true" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1520341714251" expanded="true" signature="3933:3963" ph="select count... movie" />
+                <marker date="1520341714251" expanded="true" signature="4527:4638" ph="select from movie" />
+                <marker date="1520341714251" expanded="true" signature="4725:4790" ph="delete from " />
+                <marker date="1520341714251" expanded="true" signature="4882:4899" ph="delete from " />
+                <marker date="1520341714251" expanded="true" signature="5068:5454" ph="insert into movie... " />
+                <marker date="1520341714251" expanded="true" signature="7047:7073" ph="select count... movie" />
+                <marker date="1520341714251" expanded="true" signature="8351:8804" ph="update movie... " />
+                <marker date="1520341714251" expanded="true" signature="9004:9779" ph="update movie... " />
+                <marker date="1520341714251" expanded="true" signature="9928:10218" ph="update movie... " />
+                <marker date="1520341714251" expanded="true" signature="9928:10229" ph="..." />
               </folding>
             </state>
           </provider>
@@ -277,19 +146,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/Test/TestMoviePage.java" />
         <option value="$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class" />
         <option value="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/tag/rt/core/ForEachTag.class" />
         <option value="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/tag/common/core/ForEachSupport.class" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminLogin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/common/DateConverter.java" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/ui/ExtendedModelMap.class" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/ui/ModelMap.class" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/validation/support/BindingAwareModelMap.class" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
       </list>
     </option>
   </component>
@@ -307,8 +180,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="226" />
-    <option name="y" value="46" />
+    <option name="x" value="232" />
+    <option name="y" value="89" />
     <option name="width" value="1724" />
     <option name="height" value="1038" />
   </component>
@@ -363,6 +236,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dream" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
@@ -437,6 +319,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -475,8 +365,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/assets/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -696,7 +586,7 @@
       <workItem from="1520239024559" duration="1864000" />
       <workItem from="1520242447203" duration="11322000" />
       <workItem from="1520262059059" duration="9343000" />
-      <workItem from="1520296868246" duration="21499000" />
+      <workItem from="1520296868246" duration="33069000" />
     </task>
     <task id="LOCAL-00001" summary="#feature:完成列表显示和删除功能">
       <created>1520267026120</created>
@@ -737,37 +627,37 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44569000" />
+    <option name="totallyTimeSpent" value="56139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="226" y="46" width="1724" height="1038" extended-state="0" />
+    <frame x="232" y="89" width="1724" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37692308" sideWeight="0.20273484" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4974055" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37692308" sideWeight="0.7972652" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4974055" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4974055" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37692308" sideWeight="0.7972652" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4974055" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2175981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -775,39 +665,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3901099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24314307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -822,140 +679,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" column="46" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="67" column="47" lean-forward="true" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6400">
-          <caret line="320" column="7" lean-forward="true" selection-start-line="320" selection-start-column="7" selection-end-line="320" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6247#6254#1#HTML" expanded="true" />
-            <marker date="1520337142520" expanded="true" signature="6799:7044" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="6908:7031" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7075:7310" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7183:7297" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7341:7576" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7448:7563" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7607:7848" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7716:7835" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7879:8126" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7990:8113" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="8157:8397" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="8263:8384" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="8566:8750" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="9356:10327" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="9386:9919" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="9398:9913" ph="{&quot;type&quot;: &quot;get&quot;...}" />
-            <marker date="1520337142520" expanded="true" signature="9505:9908" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="9945:10109" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10043:10103" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10140:10317" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10171:10313" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10243:10306" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/moment/zh-cn.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/resource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/dataTables.bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,13 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1004,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1018,24 +736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="226" column="0" lean-forward="false" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/binding/MapperMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/binding/MapperProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1205,109 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <marker date="1520335858091" expanded="true" signature="3933:3963" ph="select count... movie" />
-            <marker date="1520335858091" expanded="true" signature="4075:4682" ph="update movie... " />
-            <marker date="1520335858091" expanded="true" signature="4440:4475" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="4512:4562" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="4594:4634" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="4794:5099" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="4831:4857" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="4948:5006" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="5044:5087" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="5194:5323" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="5201:5312" ph="select from movie" />
-            <marker date="1520335858091" expanded="true" signature="5392:5475" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="5399:5464" ph="delete from " />
-            <marker date="1520335858091" expanded="true" signature="5549:5677" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="5556:5573" ph="delete from " />
-            <marker date="1520335858091" expanded="true" signature="5607:5665" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="5735:6139" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="5742:6128" ph="insert into movie... " />
-            <marker date="1520335858091" expanded="true" signature="6206:7610" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6282:6829" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6317:6347" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6383:6415" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6450:6481" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6514:6543" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6578:6609" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6646:6679" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6718:6753" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6787:6817" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6889:7598" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="6924:6974" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7010:7062" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7097:7150" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7183:7232" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7267:7318" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7355:7408" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7447:7502" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7536:7586" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7714:7851" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7721:7747" ph="select count... movie" />
-            <marker date="1520335858091" expanded="true" signature="7781:7839" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7912:8966" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7940:8851" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="7982:8049" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8092:8163" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8205:8276" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8316:8381" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8423:8492" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8536:8609" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8655:8732" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8773:8840" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="8886:8954" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="9018:9592" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="9025:9478" ph="update movie... " />
-            <marker date="1520335858091" expanded="true" signature="9512:9580" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="9671:10464" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="9678:10453" ph="update movie... " />
-            <marker date="1520335858091" expanded="true" signature="9699:10404" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="9736:9800" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="9835:9899" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="9932:9990" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="10025:10087" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="10124:10190" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="10229:10299" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="10333:10393" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="10534:10952" ph="..." />
-            <marker date="1520335858091" expanded="true" signature="10541:10941" ph="update movie... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-720">
@@ -1316,53 +917,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="268" column="17" lean-forward="true" selection-start-line="268" selection-start-column="17" selection-end-line="268" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6247#6254#1#HTML" expanded="true" />
-            <marker date="1520337142520" expanded="true" signature="6799:7044" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="6908:7031" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7075:7310" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7183:7297" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7341:7576" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7448:7563" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7607:7848" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7716:7835" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7879:8126" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="7990:8113" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="8157:8397" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="8263:8384" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="8566:8750" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="9356:10327" ph="..." />
-            <marker date="1520337142520" expanded="true" signature="9386:9919" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="9398:9913" ph="{&quot;type&quot;: &quot;get&quot;...}" />
-            <marker date="1520337142520" expanded="true" signature="9505:9908" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="9945:10109" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10043:10103" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10140:10317" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10171:10313" ph="{...}" />
-            <marker date="1520337142520" expanded="true" signature="10243:10306" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/common/DateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/common/DateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar!/org/apache/commons/lang3/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+          <folding>
+            <element signature="e#12403#12404#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#2561#2562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+          <folding>
+            <element signature="e#9865#9866#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/binding/MapperProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/validation/support/BindingAwareModelMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="778" column="0" lean-forward="false" selection-start-line="778" selection-start-column="0" selection-end-line="778" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/ui/ModelMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.1.3.RELEASE/spring-core-4.1.3.RELEASE-sources.jar!/org/springframework/util/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/ui/ExtendedModelMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="263" column="58" lean-forward="true" selection-start-line="263" selection-start-column="58" selection-end-line="263" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1519970994000" expanded="true" signature="1425:1435" ph="..." />
+            <marker date="1519970994000" expanded="true" signature="1496:1506" ph="..." />
+            <marker date="1519970994000" expanded="true" signature="1880:1920" ph="..." />
+            <marker date="1519970994000" expanded="true" signature="3219:3236" ph="..." />
+            <marker date="1519970994000" expanded="true" signature="3306:3323" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="134" column="24" lean-forward="true" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+          <folding>
+            <marker date="1520341714251" expanded="true" signature="3933:3963" ph="select count... movie" />
+            <marker date="1520341714251" expanded="true" signature="4527:4638" ph="select from movie" />
+            <marker date="1520341714251" expanded="true" signature="4725:4790" ph="delete from " />
+            <marker date="1520341714251" expanded="true" signature="4882:4899" ph="delete from " />
+            <marker date="1520341714251" expanded="true" signature="5068:5454" ph="insert into movie... " />
+            <marker date="1520341714251" expanded="true" signature="7047:7073" ph="select count... movie" />
+            <marker date="1520341714251" expanded="true" signature="8351:8804" ph="update movie... " />
+            <marker date="1520341714251" expanded="true" signature="9004:9779" ph="update movie... " />
+            <marker date="1520341714251" expanded="true" signature="9928:10218" ph="update movie... " />
+            <marker date="1520341714251" expanded="true" signature="9928:10229" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="89" column="34" lean-forward="false" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2642#2643#0" expanded="true" />
+            <element signature="e#2683#2684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="234">
+          <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -71,4 +71,12 @@ public class MovieController {
         movieService.updateMovie(movie);
         return "OK";
     }
+
+
+    @RequestMapping("/movie/add")
+    @ResponseBody
+    public String movieAdd(Movie movie) {
+        movieService.addMovie(movie);
+        return "OK";
+    }
 }

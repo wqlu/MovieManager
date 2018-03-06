@@ -1,6 +1,7 @@
 package com.dream.po;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
 //import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
@@ -12,6 +13,7 @@ public class Movie implements Serializable{
     private String moviename;
 
     @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date showyear;
 
     private String nation;

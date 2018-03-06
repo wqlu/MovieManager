@@ -77,9 +77,16 @@ public class MovieServiceImpl implements MovieService{
         return list;
     }
 
-
+    // 更新电影信息
     @Override
     public void updateMovie(Movie movie) {
-        movieMapper.updateMovie(movie);
+        movieMapper.updateByPrimaryKey(movie);
+    }
+
+    // 添加电影
+
+    @Override
+    public void addMovie(Movie movie) {
+        movieMapper.insert(movie);
     }
 }

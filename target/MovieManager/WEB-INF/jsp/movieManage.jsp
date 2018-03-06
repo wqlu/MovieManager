@@ -111,7 +111,7 @@
 							</select>
 						</div> -->
 						<button type="submit" class="btn btn-primary">查询</button>
-						<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerEditDialog" onclick="editCustomer(${row.movieid})">添加电影</a>
+						<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerAddDialog" >添加电影</a>
 					</form>
 				</div>
 			</div>
@@ -182,7 +182,76 @@
 						<div class="form-group">
 							<label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_movieName" placeholder="${row.moviename}" name="moviename">
+								<input type="text" class="form-control" id="edit_movieName" placeholder="ccc" name="moviename">
+							</div>
+						</div>
+						<!-- <div class="form-group">
+							<label for="edit_showyear" class="col-sm-2 control-label">上映年份</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_showyear" placeholder="yyyy-mm-hh" name="showyear">
+							</div>
+						</div> -->
+						<div class="form-group">
+							<label for="edit_nation" class="col-sm-2 control-label">国家/地区</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_nation" placeholder="国家/地区" name="nation">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edit_director" class="col-sm-2 control-label">导演</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_director" placeholder="导演" name="director">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edit_leadactors" class="col-sm-2 control-label">主演</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_leadactors" placeholder="主演" name="leadactors">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edit_screenwriter" class="col-sm-2 control-label">编剧</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_screenwriter" placeholder="编剧" name="screenwriter">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edit_picture" class="col-sm-2 control-label">海报</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_picture" placeholder="http://xxx" name="picture">
+							</div>
+						</div>
+						<input type="hidden" id="edit_start" name="start"/>
+						<input type="hidden" id="edit_rows" name="rows"/>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" onclick="updateMovie()">保存修改</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- 电影添加对话框 -->
+	<div class="modal fade" id="customerAddDialog" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">修改电影信息</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" id="add_customer_form">
+						<input type="hidden" id="edit_movieid" name="movieid"/>
+						<div class="form-group">
+							<label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_movieName" placeholder="ccc" name="moviename">
 							</div>
 						</div>
 						<div class="form-group">
@@ -227,12 +296,11 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" onclick="updateMovie()">保存修改</button>
+					<button type="button" class="btn btn-primary" onclick="addMovie()">保存修改</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- /#wrapper -->
 
 	<!-- jQuery -->
 	<script src="<%=basePath%>js/jquery.min.js"></script>
@@ -249,8 +317,10 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="<%=basePath%>js/sb-admin-2.js"></script>
+	<script type="text/javascript" src="<%=basePath%>js/common.js"></script>
 	
 	<script type="text/javascript">
+		
 		function editCustomer(id) {
 			$.ajax({
 				type:"get",
@@ -269,6 +339,16 @@
 				}
 			});
 		}
+
+
+
+		function addMovie() {
+			$.post("<%=basePath%>movie/add.action",$("#add_customer_form").serialize(),function(data){
+				alert("客户信息更新成功！");
+				window.location.reload();
+			});
+		}
+
 		function updateMovie() {
 			$.post("<%=basePath%>movie/update.action",$("#edit_customer_form").serialize(),function(data){
 				alert("客户信息更新成功！");

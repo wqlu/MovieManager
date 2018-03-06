@@ -18,4 +18,6 @@ public interface MovieService {
     public List<Category> selectCategory();
 
     public void updateMovie(Movie movie);
+
+    public void addMovie(Movie movie);
 }
