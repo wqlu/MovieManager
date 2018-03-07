@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -68,16 +69,18 @@ public class MovieController {
 
     @RequestMapping("/movie/update")
     @ResponseBody
-    public String movieUpdate(Movie movie) {
-        movieService.updateMovie(movie);
+    public String updateMovie(Movie movie, HttpServletRequest request) {
+        String[] categoryIds = request.getParameterValues("categoryId");
+        movieService.updateMovie(movie, categoryIds);
         return "OK";
     }
 
 
     @RequestMapping("/movie/add")
     @ResponseBody
-    public String movieAdd(Movie movie) {
-        movieService.addMovie(movie);
+    public String addMovie(Movie movie, HttpServletRequest request) {
+        String[] categoryIds = request.getParameterValues("categoryId");
+        movieService.addMovie(movie, categoryIds);
         return "OK";
     }
 }

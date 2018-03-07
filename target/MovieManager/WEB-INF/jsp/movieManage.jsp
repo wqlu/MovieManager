@@ -38,7 +38,6 @@
 <link href="../../assets/css/boot-crm.css" rel="stylesheet"
 	type="text/css">
 
-
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -94,7 +93,7 @@
 						</div>
 						<div class="form-group">
 							<label for="catagoryId">电影类型</label>
-							<select	class="form-control" id="catagoryId" placeholder="电影类型" name="categoryId">
+							<select	class="form-control" id="categoryId" placeholder="电影类型" name="categoryId">
 								<option value=0>--请选择--</option>
 								<c:forEach items="${categoryList}" var="ca">
 									<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
@@ -102,15 +101,7 @@
 							</select>
 						</div>
 						
-<!-- 						<div class="form-group">
-							<label for="custLevel">客户级别</label>
-							<select	class="form-control" id="custLevel" name="custLevel">
-								<option value="">--请选择--</option>
-								<c:forEach items="${levelType}" var="item">
-									<option value="${item.dict_id}"<c:if test="${item.dict_id == custLevel}"> selected</c:if>>${item.dict_item_name }</option>
-								</c:forEach>
-							</select>
-						</div> -->
+
 						<button type="submit" class="btn btn-primary">查询</button>
 						<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerAddDialog" >添加电影</a>
 					</form>
@@ -186,12 +177,7 @@
 								<input type="text" class="form-control" id="edit_movieName" placeholder="ccc" name="moviename">
 							</div>
 						</div>
-						<!-- <div class="form-group">
-							<label for="edit_showyear" class="col-sm-2 control-label">上映年份</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_showyear" placeholder="yyyy-mm-hh" name="showyear">
-							</div>
-						</div> -->
+						
 						<div class="form-group">
 							<label for="edit_nation" class="col-sm-2 control-label">国家/地区</label>
 							<div class="col-sm-10">
@@ -222,6 +208,19 @@
 								<input type="text" class="form-control" id="edit_picture" placeholder="http://xxx" name="picture">
 							</div>
 						</div>
+
+						<div class="form-group">
+							<label for="catagoryId" class="col-sm-2 control-label">电影类型</label>
+							<div class="col-sm-10">
+								<select	multiple class="form-control" id="catagoryId" placeholder="电影类型" name="categoryId">
+									<option value=0 selected="selected">--请选择--</option>
+									<c:forEach items="${categoryList}" var="ca">
+										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
+									</c:forEach>
+								</select>
+							</div>
+						</div>
+
 						<input type="hidden" id="edit_start" name="start"/>
 						<input type="hidden" id="edit_rows" name="rows"/>
 					</form>
@@ -244,60 +243,72 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel">修改电影信息</h4>
+					<h4 class="modal-title" id="add_myModalLabel">添加电影</h4>
 				</div>
 				<div class="modal-body">
 					<form class="form-horizontal" id="add_customer_form">
-						<input type="hidden" id="edit_movieid" name="movieid"/>
+						<input type="hidden" id="add_movieid" name="movieid"/>
 						<div class="form-group">
-							<label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
+							<label for="add_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_movieName" placeholder="ccc" name="moviename">
+								<input type="text" class="form-control" id="add_movieName" placeholder="ccc" name="moviename">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_showyear" class="col-sm-2 control-label">上映年份</label>
+							<label for="add_showyear" class="col-sm-2 control-label">上映年份</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_showyear" placeholder="yyyy-mm-hh" name="showyear">
+								<input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_nation" class="col-sm-2 control-label">国家/地区</label>
+							<label for="add_nation" class="col-sm-2 control-label">国家/地区</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_nation" placeholder="国家/地区" name="nation">
+								<input type="text" class="form-control" id="add_nation" placeholder="国家/地区" name="nation">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_director" class="col-sm-2 control-label">导演</label>
+							<label for="add_director" class="col-sm-2 control-label">导演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_director" placeholder="导演" name="director">
+								<input type="text" class="form-control" id="add_director" placeholder="导演" name="director">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_leadactors" class="col-sm-2 control-label">主演</label>
+							<label for="add_leadactors" class="col-sm-2 control-label">主演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_leadactors" placeholder="主演" name="leadactors">
+								<input type="text" class="form-control" id="add_leadactors" placeholder="主演" name="leadactors">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_screenwriter" class="col-sm-2 control-label">编剧</label>
+							<label for="add_screenwriter" class="col-sm-2 control-label">编剧</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_screenwriter" placeholder="编剧" name="screenwriter">
+								<input type="text" class="form-control" id="add_screenwriter" placeholder="编剧" name="screenwriter">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="edit_picture" class="col-sm-2 control-label">海报</label>
+							<label for="add_picture" class="col-sm-2 control-label">海报</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_picture" placeholder="http://xxx" name="picture">
+								<input type="text" class="form-control" id="add_picture" placeholder="http://xxx" name="picture">
 							</div>
 						</div>
-						<input type="hidden" id="edit_start" name="start"/>
-						<input type="hidden" id="edit_rows" name="rows"/>
+
+						<div class="form-group">
+							<label for="add_catagoryId" class="col-sm-2 control-label">电影类型</label>
+							<div class="col-sm-10">
+								<select	multiple class="form-control" id="add_catagoryId" placeholder="电影类型" name="categoryId">
+									<option value=0>--请选择--</option>
+									<c:forEach items="${categoryList}" var="ca">
+										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
+									</c:forEach>
+								</select>
+						</div>
+
+						<input type="hidden" id="add_start" name="start"/>
+						<input type="hidden" id="add_rows" name="rows"/>
 					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" onclick="addMovie()">保存修改</button>
+					<button type="button" class="btn btn-primary" onclick="addMovie()">确认添加</button>
 				</div>
 			</div>
 		</div>
@@ -321,6 +332,7 @@
 	<script type="text/javascript" src="<%=basePath%>js/common.js"></script>
 	
 	<script type="text/javascript">
+
 		
 		function editCustomer(id) {
 			$.ajax({
@@ -351,6 +363,7 @@
 		}
 
 		function updateMovie() {
+
 			$.post("<%=basePath%>movie/update.action",$("#edit_customer_form").serialize(),function(data){
 				alert("客户信息更新成功！");
 				window.location.reload();

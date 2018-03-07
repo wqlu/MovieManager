@@ -7,25 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2212f92-39ea-428b-8de2-ccd03d77d10e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dream/po/Query.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/lu.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/MovieController.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/MovieService.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/MovieService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/MovieServiceImpl.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/MovieServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/controller/MovieController.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/controller/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/MovieService.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/MovieService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/impl/MovieServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/impl/MovieServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.xml" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/MovieMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/dream/mapper/MovieMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/assets/css/bootstrap-select.css" afterPath="$PROJECT_DIR$/target/MovieManager/assets/css/bootstrap-select.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/js/bootstrap-select.js" afterPath="$PROJECT_DIR$/target/MovieManager/js/bootstrap-select.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,14 +38,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+            <state relative-caret-position="334">
+              <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-select.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1481284518000" expanded="true" signature="3137:3144" ph="×" />
+                <marker date="1481284518000" expanded="true" signature="3659:3665" ph="&amp;nbsp;" />
+                <marker date="1481284518000" expanded="true" signature="5926:5951" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-200">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,54 +77,63 @@
       <file leaf-file-name="MovieService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="340">
+              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="314">
+              <caret line="96" column="13" lean-forward="false" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2518#2519#0" expanded="true" />
-                <element signature="e#2559#2560#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Query.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Query.java">
+      <file leaf-file-name="MovieMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="152">
+              <caret line="138" column="10" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="10" />
               <folding>
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
+                <marker date="1520409382680" expanded="true" signature="3933:3963" ph="select count... movie" />
+                <marker date="1520409382680" expanded="true" signature="4527:4638" ph="select from movie" />
+                <marker date="1520409382680" expanded="true" signature="4725:4790" ph="delete from " />
+                <marker date="1520409382680" expanded="true" signature="4882:4899" ph="delete from " />
+                <marker date="1520409382680" expanded="true" signature="5113:5499" ph="insert into movie... " />
+                <marker date="1520409382680" expanded="true" signature="7092:7118" ph="select count... movie" />
+                <marker date="1520409382680" expanded="true" signature="8396:8849" ph="update movie... " />
+                <marker date="1520409382680" expanded="true" signature="9049:9824" ph="update movie... " />
+                <marker date="1520409382680" expanded="true" signature="9973:10263" ph="update movie... " />
+                <marker date="1520409382680" expanded="true" signature="9973:10274" ph="..." />
+                <marker date="1520409382680" expanded="true" signature="10766:11087" ph="select * fro... movie" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/CategoryExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-240">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +141,7 @@
       <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="240">
               <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,39 +153,48 @@
       <file leaf-file-name="movieManage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="102" column="30" lean-forward="false" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6020">
-              <caret line="301" column="11" lean-forward="false" selection-start-line="301" selection-start-column="11" selection-end-line="301" selection-end-column="11" />
+            <state relative-caret-position="1592">
+              <caret line="293" column="24" lean-forward="false" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="30" />
               <folding>
-                <marker date="1520386070862" expanded="true" signature="3933:3963" ph="select count... movie" />
-                <marker date="1520386070862" expanded="true" signature="4527:4638" ph="select from movie" />
-                <marker date="1520386070862" expanded="true" signature="4725:4790" ph="delete from " />
-                <marker date="1520386070862" expanded="true" signature="4882:4899" ph="delete from " />
-                <marker date="1520386070862" expanded="true" signature="5068:5454" ph="insert into movie... " />
-                <marker date="1520386070862" expanded="true" signature="7047:7073" ph="select count... movie" />
-                <marker date="1520386070862" expanded="true" signature="8351:8804" ph="update movie... " />
-                <marker date="1520386070862" expanded="true" signature="9004:9779" ph="update movie... " />
-                <marker date="1520386070862" expanded="true" signature="9928:10218" ph="update movie... " />
-                <marker date="1520386070862" expanded="true" signature="9928:10229" ph="..." />
+                <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5784#5791#1#HTML" expanded="true" />
+                <marker date="1520410542460" expanded="true" signature="8019:8170" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="8385:8569" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="8712:12003" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="8790:11995" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="8821:11986" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="8852:9067" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="8934:8995" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="8967:8974" ph="×" />
+                <marker date="1520410542460" expanded="true" signature="9096:11764" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="9155:11753" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="9247:9486" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="9356:9473" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="9517:9760" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="9625:9747" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="9791:10024" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="9898:10011" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10055:10288" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10161:10275" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10319:10558" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10427:10545" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10589:10834" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10699:10821" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10865:11103" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="10970:11090" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="11135:11746" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="11245:11627" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="11349:11614" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="11445:11596" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="11795:11976" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="12636:13799" ph="..." />
+                <marker date="1520410542460" expanded="true" signature="12670:13203" ph="{...}" />
+                <marker date="1520410542460" expanded="true" signature="12682:13197" ph="{&quot;type&quot;: &quot;get&quot;...}" />
+                <marker date="1520410542460" expanded="true" signature="12789:13192" ph="{...}" />
+                <marker date="1520410542460" expanded="true" signature="13229:13389" ph="{...}" />
+                <marker date="1520410542460" expanded="true" signature="13416:13581" ph="{...}" />
+                <marker date="1520410542460" expanded="true" signature="13612:13789" ph="{...}" />
+                <marker date="1520410542460" expanded="true" signature="13643:13785" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -172,6 +215,9 @@
       <find>sb-ad</find>
       <find>page</find>
       <find>deleteByExample</find>
+      <find>select</find>
+      <find>inser</find>
+      <find>insert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,12 +244,13 @@
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/validation/support/BindingAwareModelMap.class" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/po/Query.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -221,10 +268,29 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="196" />
-    <option name="y" value="32" />
+    <option name="x" value="238" />
+    <option name="y" value="85" />
     <option name="width" value="1724" />
     <option name="height" value="1038" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Java</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -388,7 +454,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -397,14 +463,14 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/assets/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -622,7 +688,7 @@
       <workItem from="1520296868246" duration="33662000" />
       <workItem from="1520384482256" duration="2930000" />
       <workItem from="1520387715797" duration="136000" />
-      <workItem from="1520388463122" duration="265000" />
+      <workItem from="1520388463122" duration="18246000" />
     </task>
     <task id="LOCAL-00001" summary="#feature:完成列表显示和删除功能">
       <created>1520267026120</created>
@@ -663,10 +729,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60063000" />
+    <option name="totallyTimeSpent" value="78044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="32" width="1724" height="1038" extended-state="0" />
+    <frame x="238" y="85" width="1724" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -701,6 +767,39 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37692308" sideWeight="0.20273484" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4974055" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37692308" sideWeight="0.7972652" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4974055" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20927468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -715,21 +814,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/Test/TestMoviePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/AdminExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -854,36 +943,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1070,26 +1129,26 @@
         <state relative-caret-position="200">
           <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
+            <element signature="e#320#321#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#473#474#0" expanded="false" />
+            <element signature="e#523#524#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#608#609#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#681#682#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#762#763#0" expanded="false" />
+            <element signature="e#802#803#0" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#917#918#0" expanded="false" />
+            <element signature="e#961#962#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1102,48 +1161,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
+            <marker date="1481284518000" expanded="true" signature="3137:3144" ph="×" />
+            <marker date="1481284518000" expanded="true" signature="3659:3665" ph="&amp;nbsp;" />
+            <marker date="1481284518000" expanded="true" signature="5926:5951" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6020">
-          <caret line="301" column="11" lean-forward="false" selection-start-line="301" selection-start-column="11" selection-end-line="301" selection-end-column="11" />
+        <state relative-caret-position="-200">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1592">
+          <caret line="293" column="24" lean-forward="false" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="30" />
           <folding>
-            <marker date="1520386070862" expanded="true" signature="3933:3963" ph="select count... movie" />
-            <marker date="1520386070862" expanded="true" signature="4527:4638" ph="select from movie" />
-            <marker date="1520386070862" expanded="true" signature="4725:4790" ph="delete from " />
-            <marker date="1520386070862" expanded="true" signature="4882:4899" ph="delete from " />
-            <marker date="1520386070862" expanded="true" signature="5068:5454" ph="insert into movie... " />
-            <marker date="1520386070862" expanded="true" signature="7047:7073" ph="select count... movie" />
-            <marker date="1520386070862" expanded="true" signature="8351:8804" ph="update movie... " />
-            <marker date="1520386070862" expanded="true" signature="9004:9779" ph="update movie... " />
-            <marker date="1520386070862" expanded="true" signature="9928:10218" ph="update movie... " />
-            <marker date="1520386070862" expanded="true" signature="9928:10229" ph="..." />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5784#5791#1#HTML" expanded="true" />
+            <marker date="1520410542460" expanded="true" signature="8019:8170" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="8385:8569" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="8712:12003" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="8790:11995" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="8821:11986" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="8852:9067" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="8934:8995" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="8967:8974" ph="×" />
+            <marker date="1520410542460" expanded="true" signature="9096:11764" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="9155:11753" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="9247:9486" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="9356:9473" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="9517:9760" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="9625:9747" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="9791:10024" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="9898:10011" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10055:10288" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10161:10275" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10319:10558" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10427:10545" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10589:10834" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10699:10821" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10865:11103" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="10970:11090" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="11135:11746" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="11245:11627" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="11349:11614" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="11445:11596" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="11795:11976" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="12636:13799" ph="..." />
+            <marker date="1520410542460" expanded="true" signature="12670:13203" ph="{...}" />
+            <marker date="1520410542460" expanded="true" signature="12682:13197" ph="{&quot;type&quot;: &quot;get&quot;...}" />
+            <marker date="1520410542460" expanded="true" signature="12789:13192" ph="{...}" />
+            <marker date="1520410542460" expanded="true" signature="13229:13389" ph="{...}" />
+            <marker date="1520410542460" expanded="true" signature="13416:13581" ph="{...}" />
+            <marker date="1520410542460" expanded="true" signature="13612:13789" ph="{...}" />
+            <marker date="1520410542460" expanded="true" signature="13643:13785" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/CategoryExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="240">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1151,18 +1271,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="102" column="30" lean-forward="false" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="152">
+          <caret line="138" column="10" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="10" />
+          <folding>
+            <marker date="1520409382680" expanded="true" signature="3933:3963" ph="select count... movie" />
+            <marker date="1520409382680" expanded="true" signature="4527:4638" ph="select from movie" />
+            <marker date="1520409382680" expanded="true" signature="4725:4790" ph="delete from " />
+            <marker date="1520409382680" expanded="true" signature="4882:4899" ph="delete from " />
+            <marker date="1520409382680" expanded="true" signature="5113:5499" ph="insert into movie... " />
+            <marker date="1520409382680" expanded="true" signature="7092:7118" ph="select count... movie" />
+            <marker date="1520409382680" expanded="true" signature="8396:8849" ph="update movie... " />
+            <marker date="1520409382680" expanded="true" signature="9049:9824" ph="update movie... " />
+            <marker date="1520409382680" expanded="true" signature="9973:10263" ph="update movie... " />
+            <marker date="1520409382680" expanded="true" signature="9973:10274" ph="..." />
+            <marker date="1520409382680" expanded="true" signature="10766:11087" ph="select * fro... movie" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        <state relative-caret-position="334">
+          <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="96" column="13" lean-forward="false" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1172,6 +1314,32 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>MovieManager:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1185,10 +1353,24 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MovieManager</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1208,6 +1390,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

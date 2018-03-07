@@ -135,7 +135,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.dream.po.Movie" >
+  <insert id="insert" parameterType="com.dream.po.Movie" useGeneratedKeys="true" keyProperty="movieid">
     insert into movie (movieid, moviename, showyear, 
       nation, director, leadactors, 
       screenwriter, picture)
