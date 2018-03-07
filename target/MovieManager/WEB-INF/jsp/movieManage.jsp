@@ -88,15 +88,16 @@
 				<div class="panel-body">
 
 					<form class="form-inline" action="${pageContext.request.contextPath }/movie/list.action" method="post">
-						<!-- <div class="form-group"> -->
-							<label for="moviename">电影名称</label>
-							<input type="text" class="form-control" id="moviename" value="${moviename }" name="moviename">
 						<div class="form-group">
-							<label for="movieCategory">电影类型</label> 
-							<select	class="form-control" id="movieCategory" placeholder="电影类型" name="categorylist">
-								<option value="">--请选择--</option>
-								<c:forEach items="${list}" var="ll">
-									<option value="${ll.categoryid}"<c:if test="${ll.categoryid == category}"> selected</c:if>>${ll.category }</option>
+							<label for="movieName">电影名称</label>
+							<input type="text" class="form-control" id="movieName" value="${movieName }" name="movieName">
+						</div>
+						<div class="form-group">
+							<label for="catagoryId">电影类型</label>
+							<select	class="form-control" id="catagoryId" placeholder="电影类型" name="categoryId">
+								<option value=0>--请选择--</option>
+								<c:forEach items="${categoryList}" var="ca">
+									<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 								</c:forEach>
 							</select>
 						</div>

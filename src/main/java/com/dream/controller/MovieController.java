@@ -4,6 +4,7 @@ package com.dream.controller;
 import com.dream.common.Page;
 import com.dream.po.Category;
 import com.dream.po.Movie;
+import com.dream.po.Query;
 import com.dream.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,12 +29,12 @@ public class MovieController {
 
     // 客户列表
     @RequestMapping(value = "/movie/list")
-    public String list(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="10")Integer rows, String moviename, Model model) {
+    public String list(Query query, Model model) {
 
-        Page<Movie> movies = movieService.findMovieList(page, rows, moviename);
+        Page<Movie> movies = movieService.findMovieList(query);
         model.addAttribute("page", movies);
         List<Category> categorylist = movieService.selectCategory();
-        model.addAttribute("list", categorylist);
+        model.addAttribute("categoryList", categorylist);
         //客户来源
 //        List<BaseDict> fromType = systemService.findBaseDictListByType(FROM_TYPE);
         //客户所属行业
@@ -44,8 +45,8 @@ public class MovieController {
 //        model.addAttribute("industryType", industryType);
 //        model.addAttribute("levelType", levelType);
         //参数回显
-        model.addAttribute("moviename", moviename);
-//        model.addAttribute("custSource", custSource);
+        model.addAttribute("movieName", query.getMovieName());
+        model.addAttribute("categoryId", query.getCategoryId());
 //        model.addAttribute("custIndustry", custIndustry);
 //        model.addAttribute("custLevel", custLevel);
         return "movieManage";

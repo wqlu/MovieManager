@@ -287,4 +287,31 @@
       picture = #{picture,jdbcType=VARCHAR}
     where movieid = #{movieid,jdbcType=INTEGER}
   </update>
+
+  <select id="movieCount" parameterType="Query"
+          resultType="Integer">
+    select count(1) from movie
+    <where>
+      <if test="movieName != null and movieName != ''">
+        moviename like "%"#{movieName}"%"
+      </if>
+      <if test="categoryId != 0">
+        and movieid  IN (select movieid from moviecategory where categoryid=#{categoryId})
+      </if>
+    </where>
+  </select>
+  <select id="selectMovieListByQuery" parameterType="Query"
+          resultType="Movie">
+    select * from movie
+    <where>
+      <if test="movieName != null and movieName != ''">
+        moviename like "%"#{movieName}"%"
+      </if>
+      <if test="categoryId != 0">
+        and movieid  IN (select movieid from moviecategory where categoryid=#{categoryId})
+      </if>
+    </where>
+    limit #{startRow},#{size}
+  </select>
+
 </mapper>
