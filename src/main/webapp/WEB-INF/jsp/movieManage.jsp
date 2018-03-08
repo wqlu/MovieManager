@@ -287,9 +287,16 @@
 						<div class="form-group">
 							<label for="add_picture" class="col-sm-2 control-label">海报</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_picture" placeholder="http://xxx" name="picture">
+								<input type="text" class="form-control" id="add_picture" placeholder="http://xxx" name="picture" value="">
 							</div>
 						</div>
+
+						<!-- <div class="form-group">
+							<label for="add_picture" class="col-sm-2 control-label">海报</label>
+							<input type="file" name="file" id="image">
+							<a href="javascript:uploadImg()" class="btn btn-blue">上传配图</a>
+							<%--<input type="submit" value="提交">--%>
+						</div> -->
 
 						<div class="form-group">
 							<label for="add_catagoryId" class="col-sm-2 control-label">电影类型</label>
@@ -300,10 +307,26 @@
 										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 									</c:forEach>
 								</select>
+							</div>
 						</div>
 
 						<input type="hidden" id="add_start" name="start"/>
 						<input type="hidden" id="add_rows" name="rows"/>
+
+					</form>
+					<%--<form id="add_picture_form" method="post" enctype="multipart/form-data">--%>
+				        <%--<label>文件上传</label>--%>
+				        <%--<input type="file" name="file">--%>
+				        <%--<input type="submit" value="提交">--%>
+						<%--&lt;%&ndash;<button type="button" class="btn btn-primary" onclick="addPicture()">上传图片</button>&ndash;%&gt;--%>
+				    <%--</form>--%>
+				    <form class="form-horizontal" id="add_picture_form" enctype="multipart/form-data">
+					    <div class="form-group">
+								<label for="add_picture" class="col-sm-2 control-label">海报</label>
+								<input type="file" name="file" id="image">
+								<a href="javascript:uploadImg()" class="btn btn-blue">上传配图</a>
+							<%--<input type="submit" value="提交">--%>
+						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
@@ -353,6 +376,26 @@
 			});
 		}
 
+        //上传新闻配图
+        function uploadImg(){
+            var formData = new FormData($( "#add_picture_form" )[0]);
+            formData.append("file",$("#image")[0]);
+            formData.append("name",name);
+            $.ajax({
+                url:"<%=basePath%>movie/file/upload.action",
+                type:"POST",
+                dataType:"json",
+                data:formData,
+                contentType: false,
+                processData: false,
+                success:function(data) {
+                        alert("上传成功!");
+                         // $("#picture").attr("disabled","disabled");
+                        $("#add_picture").val(data.url);
+                }
+            });
+
+        }
 
 
 		function addMovie() {

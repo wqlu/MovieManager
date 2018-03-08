@@ -96,8 +96,6 @@ public class MovieServiceImpl implements MovieService{
                 moviecategoryMapper.insert(moviecategory);
             }
         }
-
-
     }
 
     // 添加电影

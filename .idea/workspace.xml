@@ -7,26 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2212f92-39ea-428b-8de2-ccd03d77d10e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/lu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__fastdfs_client_fastdfs_client_1_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dream/common/FastDFSClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dream/controller/PictureController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/conf/client.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/MovieController.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/MovieService.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/MovieService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/MovieServiceImpl.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/MovieServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/controller/MovieController.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/controller/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/MovieService.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/MovieService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/impl/MovieServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/impl/MovieServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/MovieManager_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/MovieManager_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieManager.iml" afterPath="$PROJECT_DIR$/MovieManager.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/resource.properties" afterPath="$PROJECT_DIR$/src/main/resources/resource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.css" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-select.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/resource.properties" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/resource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/spring/springmvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/assets/css/bootstrap-select.css" afterPath="$PROJECT_DIR$/target/MovieManager/assets/css/bootstrap-select.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/js/bootstrap-select.js" afterPath="$PROJECT_DIR$/target/MovieManager/js/bootstrap-select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resource.properties" afterPath="$PROJECT_DIR$/target/classes/resource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,13 +40,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+            <state relative-caret-position="474">
+              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,152 +65,88 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-select.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-select.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1481284518000" expanded="true" signature="3137:3144" ph="×" />
-                <marker date="1481284518000" expanded="true" signature="3659:3665" ph="&amp;nbsp;" />
-                <marker date="1481284518000" expanded="true" signature="5926:5951" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
+      <file leaf-file-name="upload.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="314">
-              <caret line="96" column="13" lean-forward="false" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="138" column="10" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="10" />
-              <folding>
-                <marker date="1520409382680" expanded="true" signature="3933:3963" ph="select count... movie" />
-                <marker date="1520409382680" expanded="true" signature="4527:4638" ph="select from movie" />
-                <marker date="1520409382680" expanded="true" signature="4725:4790" ph="delete from " />
-                <marker date="1520409382680" expanded="true" signature="4882:4899" ph="delete from " />
-                <marker date="1520409382680" expanded="true" signature="5113:5499" ph="insert into movie... " />
-                <marker date="1520409382680" expanded="true" signature="7092:7118" ph="select count... movie" />
-                <marker date="1520409382680" expanded="true" signature="8396:8849" ph="update movie... " />
-                <marker date="1520409382680" expanded="true" signature="9049:9824" ph="update movie... " />
-                <marker date="1520409382680" expanded="true" signature="9973:10263" ph="update movie... " />
-                <marker date="1520409382680" expanded="true" signature="9973:10274" ph="..." />
-                <marker date="1520409382680" expanded="true" signature="10766:11087" ph="select * fro... movie" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/CategoryExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movieManage.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="movieManage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1592">
-              <caret line="293" column="24" lean-forward="false" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="30" />
+            <state relative-caret-position="320">
+              <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#5784#5791#1#HTML" expanded="true" />
-                <marker date="1520410542460" expanded="true" signature="8019:8170" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="8385:8569" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="8712:12003" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="8790:11995" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="8821:11986" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="8852:9067" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="8934:8995" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="8967:8974" ph="×" />
-                <marker date="1520410542460" expanded="true" signature="9096:11764" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="9155:11753" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="9247:9486" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="9356:9473" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="9517:9760" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="9625:9747" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="9791:10024" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="9898:10011" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10055:10288" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10161:10275" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10319:10558" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10427:10545" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10589:10834" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10699:10821" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10865:11103" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="10970:11090" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="11135:11746" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="11245:11627" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="11349:11614" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="11445:11596" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="11795:11976" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="12636:13799" ph="..." />
-                <marker date="1520410542460" expanded="true" signature="12670:13203" ph="{...}" />
-                <marker date="1520410542460" expanded="true" signature="12682:13197" ph="{&quot;type&quot;: &quot;get&quot;...}" />
-                <marker date="1520410542460" expanded="true" signature="12789:13192" ph="{...}" />
-                <marker date="1520410542460" expanded="true" signature="13229:13389" ph="{...}" />
-                <marker date="1520410542460" expanded="true" signature="13416:13581" ph="{...}" />
-                <marker date="1520410542460" expanded="true" signature="13612:13789" ph="{...}" />
-                <marker date="1520410542460" expanded="true" signature="13643:13785" ph="{...}" />
+                <element signature="e#8967#8974#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PictureController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/PictureController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springmvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="980">
+              <caret line="49" column="11" lean-forward="false" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/conf/client.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resource.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/resource.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -206,6 +157,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -237,7 +189,6 @@
         <option value="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/tag/rt/core/ForEachTag.class" />
         <option value="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/tag/common/core/ForEachSupport.class" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminLogin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/common/DateConverter.java" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/ui/ExtendedModelMap.class" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/org/springframework/ui/ModelMap.class" />
@@ -247,10 +198,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/service/MovieService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/common/FastDFSClient.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/resource.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/conf/client.conf" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
+        <option value="$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar!/org/apache/commons/fileupload/disk/DiskFileItem.class" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/PictureController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
       </list>
     </option>
   </component>
@@ -267,9 +227,36 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MovieManager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MovieManager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MovieManager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="install" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MovieManager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="238" />
-    <option name="y" value="85" />
+    <option name="x" value="308" />
+    <option name="y" value="42" />
     <option name="width" value="1724" />
     <option name="height" value="1038" />
   </component>
@@ -308,8 +295,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -350,15 +335,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dream" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dream" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -368,35 +344,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dream" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dream" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dream" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dream" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
@@ -410,7 +358,16 @@
               <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
@@ -436,21 +393,14 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MovieManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="tld" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,14 +413,17 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/dream/controller" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/dream/common" />
       <recent name="$PROJECT_DIR$/src/main/webapp/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/assets/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -508,7 +461,6 @@
     </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.32 (Ubuntu)" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="MovieManager:war exploded">
           <settings>
@@ -688,7 +640,8 @@
       <workItem from="1520296868246" duration="33662000" />
       <workItem from="1520384482256" duration="2930000" />
       <workItem from="1520387715797" duration="136000" />
-      <workItem from="1520388463122" duration="18246000" />
+      <workItem from="1520388463122" duration="37633000" />
+      <workItem from="1520469924824" duration="11462000" />
     </task>
     <task id="LOCAL-00001" summary="#feature:完成列表显示和删除功能">
       <created>1520267026120</created>
@@ -729,21 +682,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78044000" />
+    <option name="totallyTimeSpent" value="108893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="238" y="85" width="1724" height="1038" extended-state="0" />
-    <editor active="true" />
+    <frame x="308" y="42" width="1724" height="1038" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37692308" sideWeight="0.20273484" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996434" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24970274" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -756,7 +708,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4974055" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20927468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2116528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -814,93 +766,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/AdminExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/session/Configuration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="658" column="0" lean-forward="false" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="976" column="0" lean-forward="false" selection-start-line="976" selection-start-column="0" selection-end-line="976" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="879" column="0" lean-forward="false" selection-start-line="879" selection-start-column="0" selection-end-line="879" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/binding/MapperMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/AdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/AdminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <marker date="1520238246098" expanded="true" signature="3400:3511" ph="select from admin" />
-            <marker date="1520238246098" expanded="true" signature="3598:3663" ph="delete from " />
-            <marker date="1520238246098" expanded="true" signature="3755:3772" ph="delete from " />
-            <marker date="1520238246098" expanded="true" signature="3941:4115" ph="insert into admin... " />
-            <marker date="1520238246098" expanded="true" signature="4954:4980" ph="select count... admin" />
-            <marker date="1520238246098" expanded="true" signature="5707:5892" ph="update admin... " />
-            <marker date="1520238246098" expanded="true" signature="6092:6386" ph="update admin... " />
-            <marker date="1520238246098" expanded="true" signature="6474:6641" ph="update admin... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/MovieExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/common/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -930,14 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tld/commons.tld">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -950,10 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-          <folding>
-            <element signature="e#259#260#0" expanded="false" />
-            <element signature="e#315#316#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -961,16 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="29" />
-          <folding>
-            <marker date="1520238246098" expanded="true" signature="3420:3541" ph="select from moviecategory" />
-            <marker date="1520238246098" expanded="true" signature="3628:3703" ph="delete from " />
-            <marker date="1520238246098" expanded="true" signature="3803:3828" ph="delete from " />
-            <marker date="1520238246098" expanded="true" signature="4005:4179" ph="insert into moviecategory... " />
-            <marker date="1520238246098" expanded="true" signature="5026:5060" ph="select count... moviecategory" />
-            <marker date="1520238246098" expanded="true" signature="5783:5968" ph="update movie... " />
-            <marker date="1520238246098" expanded="true" signature="6176:6465" ph="update movie... " />
-            <marker date="1520238246098" expanded="true" signature="6561:6728" ph="update movie... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,14 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,9 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,17 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,74 +1001,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding>
-            <marker date="1481284518000" expanded="true" signature="3137:3144" ph="×" />
-            <marker date="1481284518000" expanded="true" signature="3659:3665" ph="&amp;nbsp;" />
-            <marker date="1481284518000" expanded="true" signature="5926:5951" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1592">
-          <caret line="293" column="24" lean-forward="false" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5784#5791#1#HTML" expanded="true" />
-            <marker date="1520410542460" expanded="true" signature="8019:8170" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="8385:8569" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="8712:12003" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="8790:11995" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="8821:11986" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="8852:9067" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="8934:8995" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="8967:8974" ph="×" />
-            <marker date="1520410542460" expanded="true" signature="9096:11764" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="9155:11753" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="9247:9486" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="9356:9473" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="9517:9760" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="9625:9747" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="9791:10024" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="9898:10011" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10055:10288" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10161:10275" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10319:10558" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10427:10545" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10589:10834" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10699:10821" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10865:11103" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="10970:11090" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="11135:11746" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="11245:11627" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="11349:11614" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="11445:11596" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="11795:11976" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="12636:13799" ph="..." />
-            <marker date="1520410542460" expanded="true" signature="12670:13203" ph="{...}" />
-            <marker date="1520410542460" expanded="true" signature="12682:13197" ph="{&quot;type&quot;: &quot;get&quot;...}" />
-            <marker date="1520410542460" expanded="true" signature="12789:13192" ph="{...}" />
-            <marker date="1520410542460" expanded="true" signature="13229:13389" ph="{...}" />
-            <marker date="1520410542460" expanded="true" signature="13416:13581" ph="{...}" />
-            <marker date="1520410542460" expanded="true" signature="13612:13789" ph="{...}" />
-            <marker date="1520410542460" expanded="true" signature="13643:13785" ph="{...}" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1249,7 +1018,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1261,52 +1036,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Movie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="-26">
+          <caret line="97" column="9" lean-forward="false" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="138" column="10" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="10" />
+        <state relative-caret-position="260">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="225" column="44" lean-forward="false" selection-start-line="225" selection-start-column="44" selection-end-line="225" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/common/FastDFSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <marker date="1520409382680" expanded="true" signature="3933:3963" ph="select count... movie" />
-            <marker date="1520409382680" expanded="true" signature="4527:4638" ph="select from movie" />
-            <marker date="1520409382680" expanded="true" signature="4725:4790" ph="delete from " />
-            <marker date="1520409382680" expanded="true" signature="4882:4899" ph="delete from " />
-            <marker date="1520409382680" expanded="true" signature="5113:5499" ph="insert into movie... " />
-            <marker date="1520409382680" expanded="true" signature="7092:7118" ph="select count... movie" />
-            <marker date="1520409382680" expanded="true" signature="8396:8849" ph="update movie... " />
-            <marker date="1520409382680" expanded="true" signature="9049:9824" ph="update movie... " />
-            <marker date="1520409382680" expanded="true" signature="9973:10263" ph="update movie... " />
-            <marker date="1520409382680" expanded="true" signature="9973:10274" ph="..." />
-            <marker date="1520409382680" expanded="true" signature="10766:11087" ph="select * fro... movie" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/conf/client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar!/org/apache/commons/fileupload/disk/DiskFileItem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE-sources.jar!/org/springframework/web/multipart/commons/CommonsMultipartFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="49" column="11" lean-forward="false" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/conf/client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/resource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+        <state relative-caret-position="474">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/PictureController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="96" column="13" lean-forward="false" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+        <state relative-caret-position="317">
+          <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5784#5791#1#HTML" expanded="true" />
+            <element signature="e#8967#8974#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
