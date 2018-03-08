@@ -4,6 +4,7 @@ package com.dream.controller;
 import com.dream.common.Page;
 import com.dream.po.Category;
 import com.dream.po.Movie;
+import com.dream.po.NewMovie;
 import com.dream.po.Query;
 import com.dream.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,9 +65,9 @@ public class MovieController {
 
     @RequestMapping("/movie/edit")
     @ResponseBody
-    public Movie getMovieById(Integer id) {
-        Movie movie = movieService.getMovieById(id);
-        return movie;
+    public NewMovie getMovieById(Integer id) {
+        NewMovie newMovie = movieService.getMovieById(id);
+        return newMovie;
     }
 
     @RequestMapping("/movie/update")

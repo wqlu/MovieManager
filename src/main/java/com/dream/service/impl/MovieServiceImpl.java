@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service("movieService")
@@ -26,16 +27,10 @@ public class MovieServiceImpl implements MovieService{
     private MoviecategoryMapper moviecategoryMapper;
 
     @Override
-    public Movie getMovieById(Integer id) {
-        Movie movie = movieMapper.selectByPrimaryKey(id);
-        return movie;
-    }
-
-    @Override
     public Page<Movie> findMovieList(Query query) {
         Page<Movie> page = new Page<Movie>();
-        page.setSize(5);
-        query.setSize(5);
+        page.setSize(10);
+        query.setSize(10);
         if (null != query) {
             //判断当前页
             if (null != query.getPage()) {
@@ -90,11 +85,11 @@ public class MovieServiceImpl implements MovieService{
             Moviecategory moviecategory = new Moviecategory();
             // 将分类id转为int型
             int tempcategoryId = Integer.parseInt(categoryId);
-            if (0 != tempcategoryId) {
-                moviecategory.setMovieid(movieid);
-                moviecategory.setCategoryid(tempcategoryId);
-                moviecategoryMapper.insert(moviecategory);
-            }
+
+            moviecategory.setMovieid(movieid);
+            moviecategory.setCategoryid(tempcategoryId);
+            moviecategoryMapper.insert(moviecategory);
+
         }
     }
 
@@ -115,4 +110,37 @@ public class MovieServiceImpl implements MovieService{
             moviecategoryMapper.insert(moviecategory);
         }
     }
+
+    //根据电影id获取该条电影记录(包括类别）
+    @Override
+    public NewMovie getMovieById(Integer id) {
+        NewMovie newMovie = new NewMovie();
+        //根据电影id获取该条电影记录并给newMovie
+        Movie movie = movieMapper.selectByPrimaryKey(id);
+        newMovie.setMovieid(movie.getMovieid());
+        newMovie.setMoviename(movie.getMoviename());
+        newMovie.setShowyear(movie.getShowyear());
+        newMovie.setNation(movie.getNation());
+        newMovie.setDirector(movie.getDirector());
+        newMovie.setLeadactors(movie.getLeadactors());
+        newMovie.setScreenwriter(movie.getScreenwriter());
+        newMovie.setPicture(movie.getPicture());
+        //根据电影id查询电影对应的类别
+        MoviecategoryExample example = new MoviecategoryExample();
+        MoviecategoryExample.Criteria criteria = example.createCriteria();
+        criteria.andMovieidEqualTo(id);
+        List<Moviecategory> list = moviecategoryMapper.selectByExample(example);
+        //定义一个临时的list
+        List temps = new ArrayList();
+        //将符合条件的id放到list里
+        for(Moviecategory mc:list){
+            temps.add(mc.getCategoryid());
+        }
+        //list转为数组并放到newMovie对象中
+//        Integer[] array = new Integer[temps.size()];
+        Integer[] arrs =  (Integer[]) temps.toArray(new Integer[temps.size()]);
+        newMovie.setCategoryid(arrs);
+        return newMovie;
+    }
+
 }

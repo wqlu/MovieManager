@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="dream" uri="http://dream.com/common/"%>
 <%
 	String path = request.getContextPath();
@@ -130,7 +130,7 @@
 								<tr>
 									<td>${row.movieid}</td>
 									<td>${row.moviename}</td>
-									<td>${row.showyear}</td>
+									<td><fmt:formatDate type="date" value="${row.showyear}" dateStyle="default"/></td>
 									<td>${row.nation}</td>
 									<td>${row.director}</td>
 									<td>${row.leadactors}</td>
@@ -213,7 +213,6 @@
 							<label for="catagoryId" class="col-sm-2 control-label">电影类型</label>
 							<div class="col-sm-10">
 								<select	multiple class="form-control" id="catagoryId" placeholder="电影类型" name="categoryId">
-									<option value=0 selected="selected">--请选择--</option>
 									<c:forEach items="${categoryList}" var="ca">
 										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 									</c:forEach>
@@ -302,7 +301,6 @@
 							<label for="add_catagoryId" class="col-sm-2 control-label">电影类型</label>
 							<div class="col-sm-10">
 								<select	multiple class="form-control" id="add_catagoryId" placeholder="电影类型" name="categoryId">
-									<option value=0>--请选择--</option>
 									<c:forEach items="${categoryList}" var="ca">
 										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 									</c:forEach>
@@ -371,7 +369,8 @@
 					$("#edit_leadactors").val(data.leadactors);
 					$("#edit_screenwriter").val(data.screenwriter);
 					$("#edit_picture").val(data.picture);
-					
+                    $("#catagoryId").val(data.categoryid);
+
 				}
 			});
 		}

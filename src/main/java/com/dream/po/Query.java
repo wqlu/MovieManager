@@ -7,7 +7,7 @@ public class Query{
     //当前页
     private Integer page;
     //每页数
-    private Integer size=10;
+    private Integer size=5;
     //开始行
     private Integer startRow = 0;
 
