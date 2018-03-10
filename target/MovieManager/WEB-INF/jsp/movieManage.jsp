@@ -61,14 +61,14 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.jsp">电影后台管理系统</a>
+			<a class="navbar-brand" href="list.action">电影后台管理系统</a>
 		</div>
 		<div class="navbar-default sidebar" role="navigation">
 			<div class="sidebar-nav navbar-collapse">
 				<ul class="nav" id="side-menu">
-					<li><a href="list.action" class="active"><i
+					<li><a href="list" class="active"><i
 							class="fa fa-edit fa-fw"></i> 电影管理</a></li>
-					<li><a href="userManage.action"><i
+					<li><a href="userlist"><i
 							class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
 				</ul>
 			</div>
@@ -103,7 +103,7 @@
 						
 
 						<button type="submit" class="btn btn-primary">查询</button>
-						<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerAddDialog" >添加电影</a>
+						<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#movieAddDialog" >添加电影</a>
 					</form>
 				</div>
 			</div>
@@ -137,7 +137,7 @@
 									<td>${row.screenwriter}</td>
 									<td>${row.picture}</td>
 									<td>
-										<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerEditDialog" onclick="editCustomer(${row.movieid})">修改</a>
+										<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#movieEditDialog" onclick="editMovie(${row.movieid})">修改</a>
 										<a href="#" class="btn btn-danger btn-xs" onclick="deleteMovie(${row.movieid})">删除</a>
 									</td>	
 								</tr>
@@ -154,11 +154,11 @@
 				<!-- /.col-lg-12 -->
 			</div>
 		</div>
-		<!-- /#page-wrapper -->
-
 	</div>
+			
+
 	<!-- 客户编辑对话框 -->
-	<div class="modal fade" id="customerEditDialog" tabindex="-1" role="dialog"
+	<div class="modal fade" id="movieEditDialog" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -169,7 +169,7 @@
 					<h4 class="modal-title" id="myModalLabel">修改电影信息</h4>
 				</div>
 				<div class="modal-body">
-					<form class="form-horizontal" id="edit_customer_form">
+					<form class="form-horizontal" id="edit_movie_form">
 						<input type="hidden" id="edit_movieid" name="movieid"/>
 						<div class="form-group">
 							<label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
@@ -234,7 +234,7 @@
 	<!-- /#wrapper -->
 
 	<!-- 电影添加对话框 -->
-	<div class="modal fade" id="customerAddDialog" tabindex="-1" role="dialog"
+	<div class="modal fade" id="movieAddDialog" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -245,7 +245,7 @@
 					<h4 class="modal-title" id="add_myModalLabel">添加电影</h4>
 				</div>
 				<div class="modal-body">
-					<form class="form-horizontal" id="add_customer_form">
+					<form class="form-horizontal" id="add_movie_form">
 						<input type="hidden" id="add_movieid" name="movieid"/>
 						<div class="form-group">
 							<label for="add_movieName" class="col-sm-2 control-label">电影名称</label>
@@ -355,12 +355,12 @@
 	<script type="text/javascript">
 
 		
-		function editCustomer(id) {
+		function editMovie(id) {
 			$.ajax({
 				type:"get",
 				url:"<%=basePath%>movie/edit.action",
 				data:{"id":id},
-				success:function(data) {   // Customer的JSON字符串传过来就行
+				success:function(data) {   // Movie的JSON字符串传过来就行
 					$("#edit_movieid").val(data.movieid);
 					$("#edit_movieName").val(data.moviename);
 					$("#edit_showyear").val(data.showyear)
@@ -370,7 +370,6 @@
 					$("#edit_screenwriter").val(data.screenwriter);
 					$("#edit_picture").val(data.picture);
                     $("#catagoryId").val(data.categoryid);
-
 				}
 			});
 		}
@@ -398,7 +397,7 @@
 
 
 		function addMovie() {
-			$.post("<%=basePath%>movie/add.action",$("#add_customer_form").serialize(),function(data){
+			$.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
 				alert("客户信息更新成功！");
 				window.location.reload();
 			});
@@ -406,7 +405,7 @@
 
 		function updateMovie() {
 
-			$.post("<%=basePath%>movie/update.action",$("#edit_customer_form").serialize(),function(data){
+			$.post("<%=basePath%>movie/update.action",$("#edit_movie_form").serialize(),function(data){
 				alert("客户信息更新成功！");
 				window.location.reload();
 			});

@@ -65,7 +65,7 @@
             $.post("/admin/login", $("#logForm_mod").serialize(),function(data){
                 if (data.status == 200) {
                     alert("登录成功！");
-                    location.href="/movie"
+                    location.href="/movie";
                 } else {
                     alert("登录失败，原因是：" + data.msg);
                 }

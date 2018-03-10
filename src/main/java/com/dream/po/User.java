@@ -1,8 +1,9 @@
 package com.dream.po;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
+public class User implements Serializable {
     private Integer userid;
 
     private String username;
@@ -12,6 +13,26 @@ public class User {
     private Date registertime;
 
     private Date lastlogintime;
+
+    private Integer start;
+
+    private Integer rows;
+
+    public Integer getStart() {
+        return start;
+    }
+
+    public void setStart(Integer start) {
+        this.start = start;
+    }
+
+    public Integer getRows() {
+        return rows;
+    }
+
+    public void setRows(Integer rows) {
+        this.rows = rows;
+    }
 
     public Integer getUserid() {
         return userid;

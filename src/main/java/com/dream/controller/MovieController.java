@@ -2,11 +2,9 @@ package com.dream.controller;
 
 
 import com.dream.common.Page;
-import com.dream.po.Category;
-import com.dream.po.Movie;
-import com.dream.po.NewMovie;
-import com.dream.po.Query;
+import com.dream.po.*;
 import com.dream.service.MovieService;
+import com.dream.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,13 +23,15 @@ public class MovieController {
 
     @Autowired
     private MovieService movieService;
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(value = "/movie")
     public String showMovie() {
         return "redirect:/movie/list.action";
     }
 
-    // 客户列表
+    // 电影列表
     @RequestMapping(value = "/movie/list")
     public String list(Query query, Model model) {
 
@@ -54,6 +54,13 @@ public class MovieController {
 //        model.addAttribute("custIndustry", custIndustry);
 //        model.addAttribute("custLevel", custLevel);
         return "movieManage";
+    }
+
+    // 用户管理
+    @RequestMapping(value = "/movie/userlist")
+    public String showUser() {
+//        return "userManage";
+        return "redirect:/user/list.action";
     }
 
     @RequestMapping("/movie/delete")
@@ -86,4 +93,5 @@ public class MovieController {
         movieService.addMovie(movie, categoryIds);
         return "OK";
     }
+
 }
