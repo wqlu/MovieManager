@@ -27,8 +27,8 @@ public class MovieServiceImpl implements MovieService{
     private MoviecategoryMapper moviecategoryMapper;
 
     @Override
-    public Page<Movie> findMovieList(Query query) {
-        Page<Movie> page = new Page<Movie>();
+    public Page<NewMovie> findMovieList(Query query) {
+        Page<NewMovie> page = new Page<NewMovie>();
         page.setSize(10);
         query.setSize(10);
         if (null != query) {
@@ -44,7 +44,14 @@ public class MovieServiceImpl implements MovieService{
                 query.setCategoryId(query.getCategoryId());
             }
             page.setTotal(movieMapper.movieCount(query));
-            page.setRows(movieMapper.selectMovieListByQuery(query));
+            List<NewMovie> newMovieList = new ArrayList<>();
+            List<Movie> movieList = movieMapper.selectMovieListByQuery(query);
+            for (Movie movie: movieList) {
+                NewMovie newMovie = getMovieById(movie.getMovieid());
+                newMovieList.add(newMovie);
+            }
+//            page.setRows(movieMapper.selectMovieListByQuery(query));
+            page.setRows(newMovieList);
         }
         return page;
     }
@@ -132,15 +139,22 @@ public class MovieServiceImpl implements MovieService{
         List<Moviecategory> list = moviecategoryMapper.selectByExample(example);
         //定义一个临时的list
         List temps = new ArrayList();
+        //
+        String categoryname = " ";
         //将符合条件的id放到list里
         for(Moviecategory mc:list){
-            temps.add(mc.getCategoryid());
+            int temId = mc.getCategoryid();
+            temps.add(temId);
+            Category category = categoryMapper.selectByPrimaryKey(temId);
+            categoryname = categoryname + category.getCategory() + "/" ;
         }
         //list转为数组并放到newMovie对象中
 //        Integer[] array = new Integer[temps.size()];
         Integer[] arrs =  (Integer[]) temps.toArray(new Integer[temps.size()]);
         newMovie.setCategoryid(arrs);
+
+        // 设置newMovie的category名称
+        newMovie.setCategoryname(categoryname);
         return newMovie;
     }
-
 }

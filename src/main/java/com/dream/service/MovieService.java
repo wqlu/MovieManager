@@ -11,7 +11,7 @@ import java.util.List;
 public interface MovieService {
 
     // 查询客户列表
-    public Page<Movie> findMovieList(Query query);
+    public Page<NewMovie> findMovieList(Query query);
 
     public NewMovie getMovieById(Integer id);
 

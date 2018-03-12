@@ -103,7 +103,7 @@
 						
 
 						<button type="submit" class="btn btn-primary">查询</button>
-						<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#movieAddDialog" >添加电影</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#movieAddDialog" >添加电影</a>
 					</form>
 				</div>
 			</div>
@@ -118,6 +118,7 @@
 									<th>电影ID</th>
 									<th>电影名称</th>
 									<th>上映年份</th>
+									<th>电影类型</th>
 									<th>国家/地区</th>
 									<th>导演</th>
 									<th>主演</th>
@@ -131,6 +132,7 @@
 									<td>${row.movieid}</td>
 									<td>${row.moviename}</td>
 									<td><fmt:formatDate type="date" value="${row.showyear}" dateStyle="default"/></td>
+									<td>${row.categoryname}</td>
 									<td>${row.nation}</td>
 									<td>${row.director}</td>
 									<td>${row.leadactors}</td>
@@ -322,7 +324,7 @@
 					    <div class="form-group">
 								<label for="add_picture" class="col-sm-2 control-label">海报</label>
 								<input type="file" name="file" id="image">
-								<a href="javascript:uploadImg()" class="btn btn-blue">上传配图</a>
+								<a href="javascript:uploadImg()" class="btn btn-success">上传配图</a>
 							<%--<input type="submit" value="提交">--%>
 						</div>
 					</form>

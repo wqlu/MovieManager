@@ -35,7 +35,7 @@ public class MovieController {
     @RequestMapping(value = "/movie/list")
     public String list(Query query, Model model) {
 
-        Page<Movie> movies = movieService.findMovieList(query);
+        Page<NewMovie> movies = movieService.findMovieList(query);
         model.addAttribute("page", movies);
         List<Category> categorylist = movieService.selectCategory();
         model.addAttribute("categoryList", categorylist);
