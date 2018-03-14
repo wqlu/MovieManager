@@ -26,6 +26,11 @@ public class Movie implements Serializable{
 
     private String picture;
 
+    // 添加三个字段
+    private Double averating;
+    private Integer numrating;
+    private String description;
+
     private Integer start;
 
     private Integer rows;
@@ -108,5 +113,29 @@ public class Movie implements Serializable{
 
     public void setPicture(String picture) {
         this.picture = picture == null ? null : picture.trim();
+    }
+
+    public Double getAverating() {
+        return averating;
+    }
+
+    public void setAverating(Double averating) {
+        this.averating = averating;
+    }
+
+    public Integer getNumrating() {
+        return numrating;
+    }
+
+    public void setNumrating(Integer numrating) {
+        this.numrating = numrating;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

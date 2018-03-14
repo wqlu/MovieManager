@@ -5,6 +5,7 @@ import com.dream.mapper.UserMapper;
 import com.dream.po.User;
 import com.dream.po.UserExample;
 import com.dream.service.UserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,15 +18,20 @@ public class UserServiceImpl implements UserService{
     private UserMapper userMapper;
 
     @Override
-    public Page<User> findUserList(Integer page, Integer rows) {
+    public Page<User> findUserList(Integer page, Integer rows, String username) {
         User user = new User();
 
+        UserExample example = new UserExample();
+        UserExample.Criteria criteria = example.createCriteria();
+        if (StringUtils.isNotBlank(username)) {
+            criteria.andUsernameLike("%"+ username + "%");
+        }
         // 当前页
         user.setStart((page-1)*rows);
         // 每页数
         user.setRows(rows);
-        UserExample example = new UserExample();
         List<User> users = userMapper.selectByExample(example);
+
         // 总记录
         Integer count = users.size();
         Page<User> result = new Page<>();

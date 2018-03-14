@@ -37,7 +37,8 @@
 	type="text/css">
 <link href="../../assets/css/boot-crm.css" rel="stylesheet"
 	type="text/css">
-
+<link href="../../assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet"
+	  type="text/css">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -255,12 +256,23 @@
 								<input type="text" class="form-control" id="add_movieName" placeholder="ccc" name="moviename">
 							</div>
 						</div>
+						<%--<div class="form-group">--%>
+							<%--<label for="add_showyear" class="col-sm-2 control-label">上映年份</label>--%>
+							<%--<div class="col-sm-10">--%>
+								<%--<input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">--%>
+							<%--</div>--%>
+						<%--</div>--%>
+
 						<div class="form-group">
 							<label for="add_showyear" class="col-sm-2 control-label">上映年份</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">
+								<%--<input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">--%>
+								<input class="form_datetime" value="" type="text" id="add_showyear" name="showyear">
+									<%--<input size="16" type="text" name="showyear" id="add_showyear" value="" readonly>--%>
+									<%--<span class="add-on"><i class="icon-th"></i></span>--%>
 							</div>
 						</div>
+
 						<div class="form-group">
 							<label for="add_nation" class="col-sm-2 control-label">国家/地区</label>
 							<div class="col-sm-10">
@@ -350,13 +362,26 @@
 	<script src="<%=basePath%>js/jquery.dataTables.min.js"></script>
 	<script src="<%=basePath%>js/dataTables.bootstrap.min.js"></script>
 
+	<%--Datetimepicker Javascript--%>
+	<script src="<%=basePath%>js/bootstrap-datetimepicker.js"></script>
+
 	<!-- Custom Theme JavaScript -->
 	<script src="<%=basePath%>js/sb-admin-2.js"></script>
 	<script type="text/javascript" src="<%=basePath%>js/common.js"></script>
 	
 	<script type="text/javascript">
 
-		
+        //日期插件
+        $(".form_datetime").datetimepicker({
+            format: 'yyyy-mm-dd',//显示格式
+            todayHighlight: 1,//今天高亮
+            minView: "month",//设置只显示到月份
+            startView:2,
+            forceParse: 0,
+            showMeridian: 1,
+            autoclose: 1//选择后自动关闭
+        });
+
 		function editMovie(id) {
 			$.ajax({
 				type:"get",
@@ -400,7 +425,7 @@
 
 		function addMovie() {
 			$.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
-				alert("客户信息更新成功！");
+				alert("客户信息添加成功！");
 				window.location.reload();
 			});
 		}

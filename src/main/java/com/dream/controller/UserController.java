@@ -16,9 +16,9 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "/user/list")
-    public String getUserList(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="5")Integer rows, Model model) {
+    public String getUserList(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="5")Integer rows, String username, Model model) {
 
-        Page<User> users = userService.findUserList(page, rows);
+        Page<User> users = userService.findUserList(page, rows, username);
         model.addAttribute("page", users);
         return "userManage";
     }
