@@ -97,11 +97,11 @@
                 <ul class="nav" id="side-menu">
                     <li><a href="/movie" class="active"><i
                             class="fa fa-edit fa-fw"></i> 电影管理</a></li>
-                    <li><a href="list.action"><i
+                    <li><a href="/user/list"><i
                             class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
                 <shiro:hasRole name="admin">
-                    <li><a href="/admin/list"><i
-                            class="fa fa-dashboard fa-fw"></i> 管理员管理</a></li>
+                    <li><a href="list.action"><i
+                        class="fa fa-dashboard fa-fw"></i> 管理员管理</a></li>
                 </shiro:hasRole>
                 </ul>
             </div>
@@ -119,7 +119,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
 
-                    <form class="form-inline" action="${pageContext.request.contextPath }/user/list.action" method="post">
+                    <form class="form-inline" action="${pageContext.request.contextPath }/admin/list.action" method="post">
                         <div class="form-group">
                             <label for="userName">用户名</label>
                             <input type="text" class="form-control" id="username" value="${ username }" name="username">
@@ -143,29 +143,27 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">用户管理信息</div>
+                        <div class="panel-heading">管理员管理信息</div>
                         <!-- /.panel-heading -->
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>用户Id</th>
-                                    <th>用户名</th>
-                                    <th>用户密码</th>
-                                    <th>注册时间</th>
-                                    <th>上次登录时间</th>
+                                    <th>管理员Id</th>
+                                    <th>管理员名字</th>
+                                    <th>管理员密码</th>
+                                    <th>角色</th>
                                 </tr>
                             </thead>
                             <tbody>
                             <c:forEach items="${page.rows}" var="row">
                                 <tr>
-                                    <td>${row.userid}</td>
-                                    <td>${row.username}</td>
-                                    <td>${row.password}</td>
-                                    <td><fmt:formatDate type="date" value="${row.registertime}" dateStyle="default"/></td>
-                                    <td><fmt:formatDate type="date" value="${row.lastlogintime}" dateStyle="default"/></td>
+                                    <td>${row.adminid}</td>
+                                    <td>${row.adminname}</td>
+                                    <td>${row.adminpassword}</td>
+                                    <td>${row.role}</td>
                                     <td>
-                                        <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#userEditDialog" onclick="editUser(${row.userid})">修改</a>
-                                        <a href="#" class="btn btn-danger btn-xs" onclick="deleteUser(${row.userid})">删除</a>
+                                        <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#userEditDialog" onclick="editUser(${row.adminid})">修改</a>
+                                        <a href="#" class="btn btn-danger btn-xs" onclick="deleteUser(${row.adminid})">删除</a>
                                     </td>
                                 </tr>
                             </c:forEach>

@@ -59,9 +59,14 @@ public class MovieController {
     // 用户管理
     @RequestMapping(value = "/movie/userlist")
     public String showUser() {
-//        return "userManage";
         return "redirect:/user/list.action";
     }
+    // 管理员管理
+    @RequestMapping(value = "/movie/adminlist")
+    public String showAdmin() {
+        return "redirect:/admin/list.action";
+    }
+
 
     @RequestMapping("/movie/delete")
     @ResponseBody
@@ -84,7 +89,6 @@ public class MovieController {
         movieService.updateMovie(movie, categoryIds);
         return "OK";
     }
-
 
     @RequestMapping("/movie/add")
     @ResponseBody

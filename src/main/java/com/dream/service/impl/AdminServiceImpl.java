@@ -1,9 +1,11 @@
 package com.dream.service.impl;
 import com.dream.common.E3Result;
+import com.dream.common.Page;
 import com.dream.mapper.AdminMapper;
 import com.dream.po.Admin;
 import com.dream.po.AdminExample;
 import com.dream.service.AdminService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
@@ -39,4 +41,28 @@ public class AdminServiceImpl implements AdminService{
         }
     }
 
+    @Override
+    public Page<Admin> findAdminList(Integer page, Integer rows, String adminname) {
+        Admin admin = new Admin();
+
+        AdminExample example = new AdminExample();
+        AdminExample.Criteria criteria = example.createCriteria();
+        if (StringUtils.isNotBlank(adminname)) {
+            criteria.andAdminnameLike("%"+ adminname + "%");
+        }
+        // 当前页
+        admin.setStart((page-1)*rows);
+        // 每页数
+        admin.setRows(rows);
+        List<Admin> admins = adminMapper.selectByExample(example);
+
+        // 总记录
+        Integer count = admins.size();
+        Page<Admin> result = new Page<>();
+        result.setPage(page);
+        result.setRows(admins);
+        result.setSize(rows);
+        result.setTotal(count);
+        return result;
+    }
 }

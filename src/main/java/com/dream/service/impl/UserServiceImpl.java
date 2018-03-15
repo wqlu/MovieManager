@@ -41,4 +41,25 @@ public class UserServiceImpl implements UserService{
         result.setTotal(count);
         return result;
     }
+
+    @Override
+    public void deleteUser(Integer id) {
+        userMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public User getUserById(Integer id) {
+        User user = userMapper.selectByPrimaryKey(id);
+        return user;
+    }
+
+    @Override
+    public void updateUser(User user) {
+        userMapper.updateByPrimaryKey(user);
+    }
+
+    @Override
+    public void addUser(User user) {
+        userMapper.insert(user);
+    }
 }

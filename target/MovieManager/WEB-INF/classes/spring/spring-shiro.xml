@@ -31,7 +31,8 @@
         <property name="filterChainDefinitions" >
             <value>
                 <!-- 需要管理员权限 -->
-                /user/* = roles["admin"]
+                /admin/* = roles["admin"]
+                /user/* = authc
                 <!-- 必须要登录才能访问 -->
                 /movie/* = authc
                 /logout = logout

@@ -2,20 +2,19 @@ package com.dream.controller;
 
 
 import com.dream.common.E3Result;
+import com.dream.common.Page;
 import com.dream.po.Admin;
 import com.dream.service.AdminService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -52,7 +51,7 @@ public class AdminController {
 //    }
 
 
-    @RequestMapping(value = "/admin/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public E3Result login(String adminname, String adminpassword, Model model) {
         Subject subject = SecurityUtils.getSubject();
@@ -69,5 +68,16 @@ public class AdminController {
             return E3Result.build(500, "密码错误" );
         }
         return E3Result.ok();
+    }
+
+
+    @RequestMapping(value = "/admin/list")
+    @RequiresRoles("admin")
+    public String getUserList(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="10")Integer rows, String username, Model model) {
+
+        Page<Admin> admins = adminService.findAdminList(page, rows, username);
+        model.addAttribute("page", admins);
+        model.addAttribute("username", username);
+        return "adminManage";
     }
 }

@@ -11,6 +11,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="dream" uri="http://dream.com/common/"%>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
@@ -44,7 +45,8 @@
     type="text/css">
 <link href="../../assets/css/boot-crm.css" rel="stylesheet"
     type="text/css">
-
+<link href="../../assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet"
+    type="text/css">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -97,6 +99,10 @@
                             class="fa fa-edit fa-fw"></i> 电影管理</a></li>
                     <li><a href="list.action"><i
                             class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
+                <shiro:hasRole name="admin">
+                    <li><a href="/admin/list"><i
+                            class="fa fa-dashboard fa-fw"></i> 管理员管理</a></li>
+                </shiro:hasRole>
                 </ul>
             </div>
             <!-- /.sidebar-collapse -->
@@ -130,7 +136,7 @@
                         <%----%>
 
                         <button type="submit" class="btn btn-primary">查询</button>
-                        <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#movieAddDialog" >添加电影</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#userAddDialog" >添加用户</a>
                     </form>
                 </div>
             </div>
@@ -158,8 +164,8 @@
                                     <td><fmt:formatDate type="date" value="${row.registertime}" dateStyle="default"/></td>
                                     <td><fmt:formatDate type="date" value="${row.lastlogintime}" dateStyle="default"/></td>
                                     <td>
-                                        <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#movieEditDialog" onclick="editMovie(${row.userid})">修改</a>
-                                        <a href="#" class="btn btn-danger btn-xs" onclick="deleteMovie(${row.userid})">删除</a>
+                                        <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#userEditDialog" onclick="editUser(${row.userid})">修改</a>
+                                        <a href="#" class="btn btn-danger btn-xs" onclick="deleteUser(${row.userid})">删除</a>
                                     </td>
                                 </tr>
                             </c:forEach>
@@ -179,7 +185,7 @@
             
 
     <!-- 客户编辑对话框 -->
-    <div class="modal fade" id="movieEditDialog" tabindex="-1" role="dialog"
+    <div class="modal fade" id="userEditDialog" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -187,57 +193,36 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" id="myModalLabel">修改电影信息</h4>
+                    <h4 class="modal-title" id="myModalLabel">修改用户信息</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal" id="edit_movie_form">
-                        <input type="hidden" id="edit_movieid" name="movieid"/>
+                    <form class="form-horizontal" id="edit_user_form">
+                        <input type="hidden" id="edit_userid" name="userid"/>
                         <div class="form-group">
-                            <label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
+                            <label for="edit_username" class="col-sm-2 control-label">用户名</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_movieName" placeholder="ccc" name="moviename">
+                                <input type="text" class="form-control" id="edit_username" placeholder="用户名" name="username">
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="edit_nation" class="col-sm-2 control-label">国家/地区</label>
+                            <label for="edit_password" class="col-sm-2 control-label">用户密码</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_nation" placeholder="国家/地区" name="nation">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="edit_director" class="col-sm-2 control-label">导演</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_director" placeholder="导演" name="director">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="edit_leadactors" class="col-sm-2 control-label">主演</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_leadactors" placeholder="主演" name="leadactors">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="edit_screenwriter" class="col-sm-2 control-label">编剧</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_screenwriter" placeholder="编剧" name="screenwriter">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="edit_picture" class="col-sm-2 control-label">海报</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_picture" placeholder="http://xxx" name="picture">
+                                <input type="text" class="form-control" id="edit_password" placeholder="用户密码" name="password">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="catagoryId" class="col-sm-2 control-label">电影类型</label>
+                            <label for="edit_registertime" class="col-sm-2 control-label">注册时间</label>
                             <div class="col-sm-10">
-                                <select multiple class="form-control" id="catagoryId" placeholder="电影类型" name="categoryId">
-                                    <c:forEach items="${categoryList}" var="ca">
-                                        <option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
-                                    </c:forEach>
-                                </select>
+                                <input type="text" class="form-control" id="edit_registertime" placeholder="yyyy-mm-hh" name="registertime">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="edit_lastlogintime" class="col-sm-2 control-label">上次登录时间</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="edit_lastlogintime" placeholder="yyyy-mm-hh" name="lastlogintime">
                             </div>
                         </div>
 
@@ -247,15 +232,15 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" onclick="updateMovie()">保存修改</button>
+                    <button type="button" class="btn btn-primary" onclick="updateUser()">保存修改</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- /#wrapper -->
 
-    <!-- 电影添加对话框 -->
-    <div class="modal fade" id="movieAddDialog" tabindex="-1" role="dialog"
+    <!-- 用户添加对话框 -->
+    <div class="modal fade" id="userAddDialog" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -263,94 +248,49 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" id="add_myModalLabel">添加电影</h4>
+                    <h4 class="modal-title" id="add_myModalLabel">添加用户</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal" id="add_movie_form">
-                        <input type="hidden" id="add_movieid" name="movieid"/>
+                    <form class="form-horizontal" id="add_user_form">
+                        <input type="hidden" id="add_userid" name="userid"/>
                         <div class="form-group">
-                            <label for="add_movieName" class="col-sm-2 control-label">电影名称</label>
+                            <label for="add_username" class="col-sm-2 control-label">用户名</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_movieName" placeholder="ccc" name="moviename">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="add_showyear" class="col-sm-2 control-label">上映年份</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="add_nation" class="col-sm-2 control-label">国家/地区</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_nation" placeholder="国家/地区" name="nation">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="add_director" class="col-sm-2 control-label">导演</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_director" placeholder="导演" name="director">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="add_leadactors" class="col-sm-2 control-label">主演</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_leadactors" placeholder="主演" name="leadactors">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="add_screenwriter" class="col-sm-2 control-label">编剧</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_screenwriter" placeholder="编剧" name="screenwriter">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="add_picture" class="col-sm-2 control-label">海报</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_picture" placeholder="http://xxx" name="picture" value="">
+                                <input type="text" class="form-control" id="add_username" placeholder="用户名" name="username">
                             </div>
                         </div>
 
-                        <!-- <div class="form-group">
-                            <label for="add_picture" class="col-sm-2 control-label">海报</label>
-                            <input type="file" name="file" id="image">
-                            <a href="javascript:uploadImg()" class="btn btn-blue">上传配图</a>
-                            <%--<input type="submit" value="提交">--%>
-                        </div> -->
-
                         <div class="form-group">
-                            <label for="add_catagoryId" class="col-sm-2 control-label">电影类型</label>
+                            <label for="add_password" class="col-sm-2 control-label">用户密码</label>
                             <div class="col-sm-10">
-                                <select multiple class="form-control" id="add_catagoryId" placeholder="电影类型" name="categoryId">
-                                    <c:forEach items="${categoryList}" var="ca">
-                                        <option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
-                                    </c:forEach>
-                                </select>
+                                <input type="text" class="form-control" id="add_password" placeholder="用户密码" name="password">
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label for="add_registertime" class="col-sm-2 control-label">注册时间</label>
+                            <div class="col-sm-10">
+                                <input class="form_datetime" value="" type="text" id="add_registertime" name="registertime">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="add_lastlogintime" class="col-sm-2 control-label">上次登录时间</label>
+                            <div class="col-sm-10">
+                                <input class="form_datetime" value="" type="text" id="add_lastlogintime" name="lastlogintime">
+                            </div>
+                        </div>
+
 
                         <input type="hidden" id="add_start" name="start"/>
                         <input type="hidden" id="add_rows" name="rows"/>
 
                     </form>
-                    <%--<form id="add_picture_form" method="post" enctype="multipart/form-data">--%>
-                        <%--<label>文件上传</label>--%>
-                        <%--<input type="file" name="file">--%>
-                        <%--<input type="submit" value="提交">--%>
-                        <%--&lt;%&ndash;<button type="button" class="btn btn-primary" onclick="addPicture()">上传图片</button>&ndash;%&gt;--%>
-                    <%--</form>--%>
-                    <form class="form-horizontal" id="add_picture_form" enctype="multipart/form-data">
-                        <div class="form-group">
-                                <label for="add_picture" class="col-sm-2 control-label">海报</label>
-                                <input type="file" name="file" id="image">
-                                <a href="javascript:uploadImg()" class="btn btn-blue">上传配图</a>
-                            <%--<input type="submit" value="提交">--%>
-                        </div>
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" onclick="addMovie()">确认添加</button>
+                    <button type="button" class="btn btn-primary" onclick="addUser()">确认添加</button>
                 </div>
             </div>
         </div>
@@ -369,72 +309,59 @@
     <script src="<%=basePath%>js/jquery.dataTables.min.js"></script>
     <script src="<%=basePath%>js/dataTables.bootstrap.min.js"></script>
 
+    <%--Datetimepicker Javascript--%>
+    <script src="<%=basePath%>js/bootstrap-datetimepicker.js"></script>
+
     <!-- Custom Theme JavaScript -->
     <script src="<%=basePath%>js/sb-admin-2.js"></script>
     <script type="text/javascript" src="<%=basePath%>js/common.js"></script>
     
     <script type="text/javascript">
 
-        
-        function editMovie(id) {
+        //日期插件
+        $(".form_datetime").datetimepicker({
+            format: 'yyyy-mm-dd',//显示格式
+            todayHighlight: 1,//今天高亮
+            minView: "month",//设置只显示到月份
+            startView:2,
+            forceParse: 0,
+            showMeridian: 1,
+            autoclose: 1//选择后自动关闭
+        });
+
+        function editUser(id) {
             $.ajax({
                 type:"get",
-                url:"<%=basePath%>movie/edit.action",
+                url:"<%=basePath%>user/edit.action",
                 data:{"id":id},
                 success:function(data) {   // Movie的JSON字符串传过来就行
-                    $("#edit_movieid").val(data.movieid);
-                    $("#edit_movieName").val(data.moviename);
-                    $("#edit_showyear").val(data.showyear)
-                    $("#edit_nation").val(data.nation)
-                    $("#edit_director").val(data.director)
-                    $("#edit_leadactors").val(data.leadactors);
-                    $("#edit_screenwriter").val(data.screenwriter);
-                    $("#edit_picture").val(data.picture);
-                    $("#catagoryId").val(data.categoryid);
+                    $("#edit_userid").val(data.userid);
+                    $("#edit_username").val(data.username);
+                    $("#edit_password").val(data.password);
+                    $("#edit_registertime").val(data.registertime);
+                    $("#edit_lastlogintime").val(data.lastlogintime);
                 }
             });
         }
 
-        //上传新闻配图
-        function uploadImg(){
-            var formData = new FormData($( "#add_picture_form" )[0]);
-            formData.append("file",$("#image")[0]);
-            formData.append("name",name);
-            $.ajax({
-                url:"<%=basePath%>movie/file/upload.action",
-                type:"POST",
-                dataType:"json",
-                data:formData,
-                contentType: false,
-                processData: false,
-                success:function(data) {
-                        alert("上传成功!");
-                         // $("#picture").attr("disabled","disabled");
-                        $("#add_picture").val(data.url);
-                }
-            });
-
-        }
-
-
-        function addMovie() {
-            $.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
+        function addUser() {
+            $.post("<%=basePath%>user/add.action",$("#add_user_form").serialize(),function(data){
                 alert("客户信息更新成功！");
                 window.location.reload();
             });
         }
 
-        function updateMovie() {
+        function updateUser() {
 
-            $.post("<%=basePath%>movie/update.action",$("#edit_movie_form").serialize(),function(data){
+            $.post("<%=basePath%>user/update.action",$("#edit_user_form").serialize(),function(data){
                 alert("客户信息更新成功！");
                 window.location.reload();
             });
         }
         
-        function deleteMovie(id) {
+        function deleteUser(id) {
             if(confirm('确实要删除该客户吗?')) {
-                $.post("<%=basePath%>movie/delete.action",{"id":id},function(data){
+                $.post("<%=basePath%>user/delete.action",{"id":id},function(data){
                     alert("客户删除更新成功！");
                     window.location.reload();
                 });

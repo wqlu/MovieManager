@@ -62,7 +62,7 @@
             return true;
         },
         doLogin:function() {
-            $.post("/admin/login", $("#logForm_mod").serialize(),function(data){
+            $.post("/login", $("#logForm_mod").serialize(),function(data){
                 if (data.status == 200) {
                     alert("登录成功！");
                     location.href="/movie";

@@ -89,9 +89,11 @@
 				<ul class="nav" id="side-menu">
 					<li><a href="list" class="active"><i
 							class="fa fa-edit fa-fw"></i> 电影管理</a></li>
-					<shiro:hasRole name="admin">
 						<li><a href="userlist"><i
 								class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
+					<shiro:hasRole name="admin">
+						<li><a href="adminlist"><i
+								class="fa fa-dashboard fa-fw"></i> 管理员管理</a></li>
 					</shiro:hasRole>
 
 				</ul>
@@ -462,9 +464,9 @@
 				success:function(data) {   // Movie的JSON字符串传过来就行
 					$("#edit_movieid").val(data.movieid);
 					$("#edit_movieName").val(data.moviename);
-					$("#edit_showyear").val(data.showyear)
-					$("#edit_nation").val(data.nation)
-					$("#edit_director").val(data.director)
+					$("#edit_showyear").val(data.showyear);
+					$("#edit_nation").val(data.nation);
+					$("#edit_director").val(data.director);
 					$("#edit_leadactors").val(data.leadactors);
 					$("#edit_screenwriter").val(data.screenwriter);
 					$("#edit_picture").val(data.picture);
