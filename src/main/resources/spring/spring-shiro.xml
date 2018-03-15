@@ -24,7 +24,7 @@
         <property name="filters">
             <map>
                 <!--退出过滤器-->
-                <!--<entry key="logout" value-ref="logoutFilter" />-->
+                <entry key="logout" value-ref="logoutFilter" />
             </map>
         </property>
         <!--URL的拦截-->
@@ -40,8 +40,8 @@
 
     </bean>
     <!--自定义退出LogoutFilter-->
-    <!--<bean id="logoutFilter" class="com.test.filter.SystemLogoutFilter">-->
-        <!--<property name="redirectUrl" value="/login"/>-->
-    <!--</bean>-->
+    <bean id="logoutFilter" class="com.dream.service.SystemLogoutFilter">
+        <property name="redirectUrl" value="/adminLogin"/>
+    </bean>
 
 </beans>

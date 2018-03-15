@@ -66,18 +66,23 @@
 			<a class="navbar-brand" href="list.action">电影后台管理系统</a>
 		</div>
 
-			<!-- /.navbar-header -->
-
 			<ul class="nav navbar-top-links navbar-right">
 
-				<ul class="dropdown-menu dropdown-user">
 
-					<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
-						退出登录</a></li>
-				</ul> <!-- /.dropdown-user -->
+
+				<li class="dropdown"><a class="dropdown-toggle"
+										data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
+					<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="#"><i class="fa fa-user fa-fw"></i> 用户设置</a></li>
+						<li><a href="#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
+						<li class="divider"></li>
+						<li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i>
+							退出登录</a></li>
+					</ul> <!-- /.dropdown-user --></li>
 				<!-- /.dropdown -->
 			</ul>
-			<!-- /.navbar-top-links -->
 
 		<div class="navbar-default sidebar" role="navigation">
 			<div class="sidebar-nav navbar-collapse">
@@ -299,7 +304,7 @@
 						<div class="form-group">
 							<label for="add_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_movieName" placeholder="ccc" name="moviename">
+								<input type="text" class="form-control" id="add_movieName" placeholder="电影名称" name="moviename">
 							</div>
 						</div>
 						<%--<div class="form-group">--%>
