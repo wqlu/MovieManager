@@ -4,6 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="dream" uri="http://dream.com/common/"%>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
@@ -64,13 +65,30 @@
 			</button>
 			<a class="navbar-brand" href="list.action">电影后台管理系统</a>
 		</div>
+
+			<!-- /.navbar-header -->
+
+			<ul class="nav navbar-top-links navbar-right">
+
+				<ul class="dropdown-menu dropdown-user">
+
+					<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
+						退出登录</a></li>
+				</ul> <!-- /.dropdown-user -->
+				<!-- /.dropdown -->
+			</ul>
+			<!-- /.navbar-top-links -->
+
 		<div class="navbar-default sidebar" role="navigation">
 			<div class="sidebar-nav navbar-collapse">
 				<ul class="nav" id="side-menu">
 					<li><a href="list" class="active"><i
 							class="fa fa-edit fa-fw"></i> 电影管理</a></li>
-					<li><a href="userlist"><i
-							class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
+					<shiro:hasRole name="admin">
+						<li><a href="userlist"><i
+								class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
+					</shiro:hasRole>
+
 				</ul>
 			</div>
 			<!-- /.sidebar-collapse -->
@@ -120,11 +138,14 @@
 									<th>电影名称</th>
 									<th>上映年份</th>
 									<th>电影类型</th>
-									<th>国家/地区</th>
+									<%--<th>国家/地区</th>--%>
 									<th>导演</th>
-									<th>主演</th>
-									<th>编剧</th>
+									<%--<th>主演</th>--%>
+									<%--<th>编剧</th>--%>
+									<th>评分</th>
+									<th>评价人数</th>
 									<th>海报</th>
+									<%--<th>电影详情</th>--%>
 								</tr>
 							</thead>
 							<tbody>
@@ -134,11 +155,14 @@
 									<td>${row.moviename}</td>
 									<td><fmt:formatDate type="date" value="${row.showyear}" dateStyle="default"/></td>
 									<td>${row.categoryname}</td>
-									<td>${row.nation}</td>
+									<%--<td>${row.nation}</td>--%>
 									<td>${row.director}</td>
-									<td>${row.leadactors}</td>
-									<td>${row.screenwriter}</td>
+									<%--<td>${row.leadactors}</td>--%>
+									<%--<td>${row.screenwriter}</td>--%>
+									<td>${row.averating}</td>
+									<td>${row.numrating}</td>
 									<td>${row.picture}</td>
+									<%--<td>${row.description}</td>--%>
 									<td>
 										<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#movieEditDialog" onclick="editMovie(${row.movieid})">修改</a>
 										<a href="#" class="btn btn-danger btn-xs" onclick="deleteMovie(${row.movieid})">删除</a>
@@ -177,7 +201,7 @@
 						<div class="form-group">
 							<label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_movieName" placeholder="ccc" name="moviename">
+								<input type="text" class="form-control" id="edit_movieName" placeholder="电影名称" name="moviename">
 							</div>
 						</div>
 						
@@ -205,10 +229,25 @@
 								<input type="text" class="form-control" id="edit_screenwriter" placeholder="编剧" name="screenwriter">
 							</div>
 						</div>
+
 						<div class="form-group">
 							<label for="edit_picture" class="col-sm-2 control-label">海报</label>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" id="edit_picture" placeholder="http://xxx" name="picture">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="edit_picture" class="col-sm-2 control-label">评分</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_averating" placeholder="评分" name="averating">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="edit_picture" class="col-sm-2 control-label">评价人数</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_numrating" placeholder="评价人数" name="numrating">
 							</div>
 						</div>
 
@@ -220,6 +259,13 @@
 										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 									</c:forEach>
 								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="edit_picture" class="col-sm-2 control-label">电影详情</label>
+							<div class="col-sm-10">
+								<input type="text" style="height:100%" class="form-control" id="edit_description" placeholder="电影详情" name="description">
 							</div>
 						</div>
 
@@ -253,7 +299,7 @@
 						<div class="form-group">
 							<label for="add_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_movieName" placeholder="ccc" name="moviename">
+								<input type="text" class="form-control" id="add_movieName" placeholder="电影名称" name="moviename">
 							</div>
 						</div>
 						<%--<div class="form-group">--%>
@@ -304,6 +350,20 @@
 							</div>
 						</div>
 
+						<div class="form-group">
+							<label for="add_picture" class="col-sm-2 control-label">评分</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="add_averating" placeholder="评分" name="averating">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="add_picture" class="col-sm-2 control-label">评价人数</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="add_numrating" placeholder="评价人数" name="numrating">
+							</div>
+						</div>
+
 						<!-- <div class="form-group">
 							<label for="add_picture" class="col-sm-2 control-label">海报</label>
 							<input type="file" name="file" id="image">
@@ -319,6 +379,13 @@
 										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 									</c:forEach>
 								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="add_picture" class="col-sm-2 control-label">电影详情</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="add_description" placeholder="电影详情" name="description">
 							</div>
 						</div>
 
@@ -396,7 +463,10 @@
 					$("#edit_leadactors").val(data.leadactors);
 					$("#edit_screenwriter").val(data.screenwriter);
 					$("#edit_picture").val(data.picture);
+					$("#edit_averating").val(data.averating);
+					$("#edit_numrating").val(data.numrating);
                     $("#catagoryId").val(data.categoryid);
+                    $("#edit_description").val(data.description);
 				}
 			});
 		}

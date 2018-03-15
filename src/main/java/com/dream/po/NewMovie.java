@@ -24,6 +24,41 @@ public class NewMovie {
 
     private String picture;
 
+    private Integer[] categoryid;
+
+    private String categoryname;
+
+    // 新加入的三个字段
+    private Double averating;
+
+    private Integer numrating;
+
+    private String description;
+
+    public Double getAverating() {
+        return averating;
+    }
+
+    public void setAverating(Double averating) {
+        this.averating = averating;
+    }
+
+    public Integer getNumrating() {
+        return numrating;
+    }
+
+    public void setNumrating(Integer numrating) {
+        this.numrating = numrating;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public Integer[] getCategoryid() {
         return categoryid;
     }
@@ -31,10 +66,6 @@ public class NewMovie {
     public void setCategoryid(Integer[] categoryid) {
         this.categoryid = categoryid;
     }
-
-    private Integer[] categoryid;
-
-    private String categoryname;
 
 
     public String getCategoryname() {

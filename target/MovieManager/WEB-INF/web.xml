@@ -20,6 +20,7 @@
   </welcome-file-list>
 
   <!-- 加载spring容器 -->
+
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:spring/applicationContext-*.xml</param-value>
@@ -60,6 +61,22 @@
     <filter-name>CharacterEncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+
+  <!-- shiro 过滤器 start -->
+  <filter>
+    <filter-name>shiroFilter</filter-name>
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    <!-- 设置true由servlet容器控制filter的生命周期 -->
+    <init-param>
+      <param-name>targetFilterLifecycle</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>shiroFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- shiro 过滤器 end -->
 
 </web-app>
         

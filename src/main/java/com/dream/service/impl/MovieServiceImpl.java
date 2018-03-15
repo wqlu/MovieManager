@@ -132,6 +132,9 @@ public class MovieServiceImpl implements MovieService{
         newMovie.setLeadactors(movie.getLeadactors());
         newMovie.setScreenwriter(movie.getScreenwriter());
         newMovie.setPicture(movie.getPicture());
+        newMovie.setAverating(movie.getAverating());
+        newMovie.setNumrating(movie.getNumrating());
+        newMovie.setDescription(movie.getDescription());
         //根据电影id查询电影对应的类别
         MoviecategoryExample example = new MoviecategoryExample();
         MoviecategoryExample.Criteria criteria = example.createCriteria();

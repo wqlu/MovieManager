@@ -10,6 +10,9 @@
     <result column="leadactors" property="leadactors" jdbcType="VARCHAR" />
     <result column="screenwriter" property="screenwriter" jdbcType="VARCHAR" />
     <result column="picture" property="picture" jdbcType="VARCHAR" />
+    <result column="averating" property="averating" jdbcType="DOUBLE" />
+    <result column="numrating" property="numrating" jdbcType="INTEGER" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -70,7 +73,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    movieid, moviename, showyear, nation, director, leadactors, screenwriter, picture
+    movieid, moviename, showyear, nation, director, leadactors, screenwriter, picture, averating, numrating, description
   </sql>
   
   <sql id="selectMovieListWhere">
@@ -138,10 +141,10 @@
   <insert id="insert" parameterType="com.dream.po.Movie" useGeneratedKeys="true" keyProperty="movieid">
     insert into movie (movieid, moviename, showyear, 
       nation, director, leadactors, 
-      screenwriter, picture)
+      screenwriter, averating, numrating, picture, description)
     values (#{movieid,jdbcType=INTEGER}, #{moviename,jdbcType=VARCHAR}, #{showyear,jdbcType=TIMESTAMP}, 
       #{nation,jdbcType=VARCHAR}, #{director,jdbcType=VARCHAR}, #{leadactors,jdbcType=VARCHAR}, 
-      #{screenwriter,jdbcType=VARCHAR}, #{picture,jdbcType=VARCHAR})
+      #{screenwriter,jdbcType=VARCHAR},#{averating,jdbcType=DOUBLE}, #{numrating,jdbcType=INTEGER}, #{picture,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.dream.po.Movie" >
     insert into movie
@@ -284,6 +287,9 @@
       director = #{director,jdbcType=VARCHAR},
       leadactors = #{leadactors,jdbcType=VARCHAR},
       screenwriter = #{screenwriter,jdbcType=VARCHAR},
+      averating = #{averating,jdbcType=DOUBLE},
+      numrating = #{numrating,jdbcType=INTEGER},
+      description = #{description,jdbcType=VARCHAR},
       picture = #{picture,jdbcType=VARCHAR}
     where movieid = #{movieid,jdbcType=INTEGER}
   </update>
