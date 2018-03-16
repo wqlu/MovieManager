@@ -75,17 +75,11 @@
         </div>
 
             <ul class="nav navbar-top-links navbar-right">
-
-
-
                 <li class="dropdown"><a class="dropdown-toggle"
                                         data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
                     <i class="fa fa-caret-down"></i>
                 </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 用户设置</a></li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
-                        <li class="divider"></li>
                         <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i>
                             退出登录</a></li>
                     </ul> <!-- /.dropdown-user --></li>
@@ -98,10 +92,10 @@
                     <li><a href="/movie/list" class="active"><i
                             class="fa fa-edit fa-fw"></i> 电影管理</a></li>
                     <li><a href="/user/list"><i
-                            class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
+                            class="fa fa-edit fa-fw"></i> 用户管理</a></li>
                 <shiro:hasRole name="admin">
                     <li><a href="list.action"><i
-                        class="fa fa-dashboard fa-fw"></i> 管理员管理</a></li>
+                        class="fa fa-edit fa-fw"></i> 管理员管理</a></li>
                 </shiro:hasRole>
                 </ul>
             </div>
@@ -144,7 +138,7 @@
                                     <th>角色</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody align="center">
                             <c:forEach items="${page.rows}" var="row">
                                 <tr>
                                     <td>${row.adminid}</td>
@@ -172,7 +166,7 @@
     </div>
             
 
-    <!-- 客户编辑对话框 -->
+    <!-- 管理员编辑对话框 -->
     <div class="modal fade" id="adminEditDialog" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -377,9 +371,9 @@
         };
         
         function deleteAdmin(id) {
-            if(confirm('确实要删除该客户吗?')) {
+            if(confirm('确实要删除该管理员吗?')) {
                 $.post("<%=basePath%>admin/delete.action",{"id":id},function(data){
-                    alert("客户删除更新成功！");
+                    alert("管理员删除成功！");
                     window.location.reload();
                 });
             }

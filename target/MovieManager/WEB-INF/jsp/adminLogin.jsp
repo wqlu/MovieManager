@@ -35,11 +35,6 @@
                     <a href="#" class="fa fa-question-circle"></a>
                 </div>
                 <div class="form-group">
-                    <div class="main-checkbox">
-                        <input type="checkbox" value="None" id="checkbox1" name="check"/>
-                        <label for="checkbox1"></label>
-                    </div>
-                    <span class="text">Remember me</span>
                     <button  id="login" type="button" class="btn btn-default" onclick="ADMINLOGIN.login()">登录</button>
                 </div>
             </form>

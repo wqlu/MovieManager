@@ -67,17 +67,11 @@
 		</div>
 
 			<ul class="nav navbar-top-links navbar-right">
-
-
-
 				<li class="dropdown"><a class="dropdown-toggle"
 										data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
 					<i class="fa fa-caret-down"></i>
 				</a>
 					<ul class="dropdown-menu dropdown-user">
-						<li><a href="#"><i class="fa fa-user fa-fw"></i> 用户设置</a></li>
-						<li><a href="#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
-						<li class="divider"></li>
 						<li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i>
 							退出登录</a></li>
 					</ul> <!-- /.dropdown-user --></li>
@@ -89,11 +83,11 @@
 				<ul class="nav" id="side-menu">
 					<li><a href="list" class="active"><i
 							class="fa fa-edit fa-fw"></i> 电影管理</a></li>
-						<li><a href="userlist"><i
-								class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
+						<li><a href="/user/list"><i
+								class="fa fa-edit fa-fw"></i> 用户管理</a></li>
 					<shiro:hasRole name="admin">
 						<li><a href="adminlist"><i
-								class="fa fa-dashboard fa-fw"></i> 管理员管理</a></li>
+								class="fa fa-edit fa-fw"></i> 管理员管理</a></li>
 					</shiro:hasRole>
 
 				</ul>
@@ -155,7 +149,7 @@
 									<%--<th>电影详情</th>--%>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody align="center">
 							<c:forEach items="${page.rows}" var="row">
 								<tr>
 									<td>${row.movieid}</td>
@@ -191,7 +185,7 @@
 	</div>
 			
 
-	<!-- 客户编辑对话框 -->
+	<!-- 电影编辑对话框 -->
 	<div class="modal fade" id="movieEditDialog" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
@@ -208,60 +202,68 @@
 						<div class="form-group">
 							<label for="edit_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_movieName" placeholder="电影名称" name="moviename">
+								<input type="text" class="form-control" id="edit_movieName" placeholder="" name="moviename">
 							</div>
 						</div>
-						
+						<div class="form-group">
+							<label for="edit_showyear" class="col-sm-2 control-label">上映年份</label>
+							<div class="col-sm-10">
+								<input class="form_datetime" type="text" id="edit_showyear" name="showyear">
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="edit_nation" class="col-sm-2 control-label">国家/地区</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_nation" placeholder="国家/地区" name="nation">
+								<input type="text" class="form-control" id="edit_nation" placeholder="" name="nation">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edit_picture" class="col-sm-2 control-label">海报URL</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_picture" placeholder="" name="picture">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edit_picture" class="col-sm-2 control-label">评价人数</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="edit_numrating" placeholder="" name="numrating">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="edit_director" class="col-sm-2 control-label">导演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_director" placeholder="导演" name="director">
+								<input type="text" class="form-control" id="edit_director" placeholder="" name="director">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="edit_leadactors" class="col-sm-2 control-label">主演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_leadactors" placeholder="主演" name="leadactors">
+								<input type="text" class="form-control" id="edit_leadactors" placeholder="" name="leadactors">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="edit_screenwriter" class="col-sm-2 control-label">编剧</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_screenwriter" placeholder="编剧" name="screenwriter">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="edit_picture" class="col-sm-2 control-label">海报</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_picture" placeholder="http://xxx" name="picture">
+								<input type="text" class="form-control" id="edit_screenwriter" placeholder="" name="screenwriter">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="edit_picture" class="col-sm-2 control-label">评分</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_averating" placeholder="评分" name="averating">
+								<input type="text" class="form-control" id="edit_averating" placeholder="" name="averating">
 							</div>
 						</div>
-
 						<div class="form-group">
-							<label for="edit_picture" class="col-sm-2 control-label">评价人数</label>
+							<label for="edit_picture" class="col-sm-2 control-label">电影详情</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="edit_numrating" placeholder="评价人数" name="numrating">
+								<input type="text" style="height:100%" class="form-control" id="edit_description" placeholder="" name="description">
 							</div>
 						</div>
-
 						<div class="form-group">
 							<label for="catagoryId" class="col-sm-2 control-label">电影类型</label>
 							<div class="col-sm-10">
-								<select	multiple class="form-control" id="catagoryId" placeholder="电影类型" name="categoryId">
+								<select	multiple class="form-control" id="catagoryId" placeholder="" name="categoryId">
 									<c:forEach items="${categoryList}" var="ca">
 										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 									</c:forEach>
@@ -269,20 +271,23 @@
 							</div>
 						</div>
 
-						<div class="form-group">
-							<label for="edit_picture" class="col-sm-2 control-label">电影详情</label>
-							<div class="col-sm-10">
-								<input type="text" style="height:100%" class="form-control" id="edit_description" placeholder="电影详情" name="description">
-							</div>
-						</div>
-
 						<input type="hidden" id="edit_start" name="start"/>
 						<input type="hidden" id="edit_rows" name="rows"/>
+					</form>
+
+					<form class="form-horizontal" id="edit_picture_form" enctype="multipart/form-data">
+						<div class="form-group">
+							<label for="edit_picture" class="col-sm-2 control-label">上传海报</label>
+							<div class="col-sm-10">
+								<input type="file" name="file" id="image1">
+								<a href="javascript:uploadImg1()" class="btn btn-success">上传配图</a>
+							</div>
+						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" onclick="updateMovie()">保存修改</button>
+					<button type="button" class="btn btn-primary" onclick="UPDATE.updateMovie()">保存修改</button>
 				</div>
 			</div>
 		</div>
@@ -306,77 +311,69 @@
 						<div class="form-group">
 							<label for="add_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_movieName" placeholder="电影名称" name="moviename">
+								<input type="text" required="required" class="form-control" id="add_movieName" placeholder="" name="moviename">
 							</div>
 						</div>
-						<%--<div class="form-group">--%>
-							<%--<label for="add_showyear" class="col-sm-2 control-label">上映年份</label>--%>
-							<%--<div class="col-sm-10">--%>
-								<%--<input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">--%>
-							<%--</div>--%>
-						<%--</div>--%>
 
 						<div class="form-group">
 							<label for="add_showyear" class="col-sm-2 control-label">上映年份</label>
 							<div class="col-sm-10">
-								<%--<input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">--%>
 								<input required="required" class="form_datetime" value="" type="text" id="add_showyear" name="showyear">
-									<%--<input size="16" type="text" name="showyear" id="add_showyear" value="" readonly>--%>
-									<%--<span class="add-on"><i class="icon-th"></i></span>--%>
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="add_nation" class="col-sm-2 control-label">国家/地区</label>
 							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_nation" placeholder="国家/地区" name="nation">
+								<input type="text" required="required" class="form-control" id="add_nation" placeholder="" name="nation">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="add_picture" class="col-sm-2 control-label">海报URL</label>
+							<div class="col-sm-10">
+								<input type="text" required="required" class="form-control" id="add_picture" placeholder="" name="picture" value="">
+							</div>
+						</div>
+
+
+						<div class="form-group">
+							<label for="add_picture" class="col-sm-2 control-label">评价人数</label>
+							<div class="col-sm-10">
+								<input type="text" required="required" class="form-control" id="add_numrating" placeholder="" name="numrating">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="add_director" class="col-sm-2 control-label">导演</label>
 							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_director" placeholder="导演" name="director">
+								<input type="text" required="required" class="form-control" id="add_director" placeholder="" name="director">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="add_leadactors" class="col-sm-2 control-label">主演</label>
 							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_leadactors" placeholder="主演" name="leadactors">
+								<input type="text" required="required" class="form-control" id="add_leadactors" placeholder="" name="leadactors">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="add_screenwriter" class="col-sm-2 control-label">编剧</label>
 							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_screenwriter" placeholder="编剧" name="screenwriter">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="add_picture" class="col-sm-2 control-label">海报</label>
-							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_picture" placeholder="http://xxx" name="picture" value="">
+								<input type="text" required="required" class="form-control" id="add_screenwriter" placeholder="" name="screenwriter">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="add_picture" class="col-sm-2 control-label">评分</label>
 							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_averating" placeholder="评分" name="averating">
+								<input type="text" required="required" class="form-control" id="add_averating" placeholder="" name="averating">
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label for="add_picture" class="col-sm-2 control-label">评价人数</label>
+							<label for="add_picture" class="col-sm-2 control-label">电影详情</label>
 							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_numrating" placeholder="评价人数" name="numrating">
+								<input type="text" required="required" class="form-control" id="add_description" placeholder="" name="description">
 							</div>
 						</div>
-
-						<!-- <div class="form-group">
-							<label for="add_picture" class="col-sm-2 control-label">海报</label>
-							<input type="file" name="file" id="image">
-							<a href="javascript:uploadImg()" class="btn btn-blue">上传配图</a>
-							<%--<input type="submit" value="提交">--%>
-						</div> -->
 
 						<div class="form-group">
 							<label for="add_catagoryId" class="col-sm-2 control-label">电影类型</label>
@@ -389,35 +386,24 @@
 							</div>
 						</div>
 
-						<div class="form-group">
-							<label for="add_picture" class="col-sm-2 control-label">电影详情</label>
-							<div class="col-sm-10">
-								<input type="text" required="required" class="form-control" id="add_description" placeholder="电影详情" name="description">
-							</div>
-						</div>
-
 						<input type="hidden" id="add_start" name="start"/>
 						<input type="hidden" id="add_rows" name="rows"/>
 
 					</form>
-					<%--<form id="add_picture_form" method="post" enctype="multipart/form-data">--%>
-				        <%--<label>文件上传</label>--%>
-				        <%--<input type="file" name="file">--%>
-				        <%--<input type="submit" value="提交">--%>
-						<%--&lt;%&ndash;<button type="button" class="btn btn-primary" onclick="addPicture()">上传图片</button>&ndash;%&gt;--%>
-				    <%--</form>--%>
+
 				    <form class="form-horizontal" id="add_picture_form" enctype="multipart/form-data">
 					    <div class="form-group">
-								<label for="add_picture" class="col-sm-2 control-label">海报</label>
+								<label for="add_picture" class="col-sm-2 control-label">上传海报</label>
+							<div class="col-sm-10">
 								<input type="file" name="file" id="image">
 								<a href="javascript:uploadImg()" class="btn btn-success">上传配图</a>
-							<%--<input type="submit" value="提交">--%>
+							</div>
 						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" onclick="addMovie()">确认添加</button>
+					<button type="button" class="btn btn-primary" onclick="ADDMOVIE.addMovie()">确认添加</button>
 				</div>
 			</div>
 		</div>
@@ -444,6 +430,68 @@
 	<script type="text/javascript" src="<%=basePath%>js/common.js"></script>
 	
 	<script type="text/javascript">
+
+        var ADDMOVIE = {
+            checkInput:function() {
+
+                if(!$("#add_movieName").val()) {
+                    alert("请输入电影名称！");
+                    return false;
+                }
+                if(!$("#add_showyear").val()) {
+                    alert("请输入上映年份！");
+                    return false;
+                }
+                if(!$("#add_nation").val()) {
+                    alert("请输入国家/地区！");
+                    return false;
+                }
+                if(!$("#add_picture").val()) {
+                    alert("请输入海报URL！");
+                    return false;
+                }
+                if(!$("#add_numrating").val()) {
+                    alert("请输入评论人数！");
+                    return false;
+                }
+                if(!$("#add_director").val()) {
+                    alert("请输入导演！");
+                    return false;
+                }
+                if(!$("#add_leadactors").val()) {
+                    alert("请输入主演！");
+                    return false;
+                }
+                if(!$("#add_screenwriter").val()) {
+                    alert("请输入编剧！");
+                    return false;
+                }
+                if(!$("#add_averating").val()) {
+                    alert("请输入评分！");
+                    return false;
+                }
+                if(!$("#add_description").val()) {
+                    alert("请输入详情！");
+                    return false;
+                }
+                if(!$("#add_catagoryId").val()) {
+                    alert("请选择电影类型！");
+                    return false;
+                }
+                return true;
+            },
+            addMo:function() {
+                    $.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
+                        alert("电影信息添加成功！");
+                        window.location.reload();
+                    });
+                },
+            addMovie:function() {
+                if (this.checkInput()) {
+                    this.addMo();
+                }
+            }
+        };
 
         //日期插件
         $(".form_datetime").datetimepicker({
@@ -478,7 +526,7 @@
 			});
 		}
 
-        //上传新闻配图
+        //上传海报配图
         function uploadImg(){
             var formData = new FormData($( "#add_picture_form" )[0]);
             formData.append("file",$("#image")[0]);
@@ -496,34 +544,93 @@
                         $("#add_picture").val(data.url);
                 }
             });
-
         }
 
-		function addMovie() {
-			var moviename = document.getElementById("add_moviename").value;
-			if (moviename == null || moviename == '') {
-			    alert("电影名不能为空！");
-			    return false;
-			} else {
-                $.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
-                    alert("客户信息添加成功！");
+        function uploadImg1(){
+            var formData = new FormData($( "#edit_picture_form" )[0]);
+            formData.append("file",$("#image1")[0]);
+            formData.append("name",name);
+            $.ajax({
+                url:"<%=basePath%>movie/file/upload.action",
+                type:"POST",
+                dataType:"json",
+                data:formData,
+                contentType: false,
+                processData: false,
+                success:function(data) {
+                    alert("上传成功!");
+                    // $("#picture").attr("disabled","disabled");
+                    $("#edit_picture").val(data.url);
+                }
+            });
+        }
+
+        var UPDATE = {
+            checkInput:function() {
+
+                if(!$("#edit_movieName").val()) {
+                    alert("请输入电影名称！");
+                    return false;
+                }
+                if(!$("#edit_showyear").val()) {
+                    alert("请输入上映年份！");
+                    return false;
+                }
+                if(!$("#edit_nation").val()) {
+                    alert("请输入国家/地区！");
+                    return false;
+                }
+                if(!$("#edit_picture").val()) {
+                    alert("请输入海报URL！");
+                    return false;
+                }
+                if(!$("#edit_numrating").val()) {
+                    alert("请输入评论人数！");
+                    return false;
+                }
+                if(!$("#edit_director").val()) {
+                    alert("请输入导演！");
+                    return false;
+                }
+                if(!$("#edit_leadactors").val()) {
+                    alert("请输入主演！");
+                    return false;
+                }
+                if(!$("#edit_screenwriter").val()) {
+                    alert("请输入编剧！");
+                    return false;
+                }
+                if(!$("#edit_averating").val()) {
+                    alert("请输入评分！");
+                    return false;
+                }
+                if(!$("#edit_description").val()) {
+                    alert("请输入详情！");
+                    return false;
+                }
+                if(!$("#catagoryId").val()) {
+                    alert("请选择电影类型！");
+                    return false;
+                }
+                return true;
+            },
+            updateMo:function() {
+                $.post("<%=basePath%>movie/update.action",$("#edit_movie_form").serialize(),function(data){
+                    alert("电影信息更新成功！");
                     window.location.reload();
                 });
-			}
-		}
+            },
+            updateMovie:function() {
+                if (this.checkInput()) {
+                    this.updateMo();
+                }
+            }
+        };
 
-		function updateMovie() {
-
-			$.post("<%=basePath%>movie/update.action",$("#edit_movie_form").serialize(),function(data){
-				alert("客户信息更新成功！");
-				window.location.reload();
-			});
-		}
-		
 		function deleteMovie(id) {
-			if(confirm('确实要删除该客户吗?')) {
+			if(confirm('确实要删除该电影吗?')) {
 				$.post("<%=basePath%>movie/delete.action",{"id":id},function(data){
-					alert("客户删除更新成功！");
+					alert("电影信息删除成功！");
 					window.location.reload();
 				});
 			}

@@ -95,6 +95,7 @@
     SELECT
     userid,
     username,
+    password,
     registertime,
     lastlogintime
     FROM

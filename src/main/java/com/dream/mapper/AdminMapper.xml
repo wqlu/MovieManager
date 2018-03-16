@@ -99,9 +99,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.dream.po.Admin" >
-    insert into admin (adminid, adminname, adminpassword
+    insert into admin (adminid, adminname, adminpassword,role
       )
-    values (#{adminid,jdbcType=INTEGER}, #{adminname,jdbcType=VARCHAR}, #{adminpassword,jdbcType=VARCHAR}
+    values (#{adminid,jdbcType=INTEGER}, #{adminname,jdbcType=VARCHAR}, #{adminpassword,jdbcType=VARCHAR},#{role,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.dream.po.Admin" >
@@ -180,4 +180,32 @@
       role = #{role,jdbcType=INTEGER}
     where adminid = #{adminid,jdbcType=INTEGER}
   </update>
+
+  <sql id="selectAdminListWhere">
+    <where>
+      <if test="adminname != null" >
+        adminname like "%"#{adminname}"%"
+      </if>
+      and role = 1
+    </where>
+  </sql>
+  <select id="selectAdminList" parameterType="admin" resultType="admin">
+    SELECT
+    adminid,
+    adminname,
+    adminpassword,
+    role
+    FROM
+    admin
+
+    <include refid="selectAdminListWhere"/>
+    <if test="start !=null and rows != null">
+      limit #{start},#{rows}
+    </if>
+  </select>
+  <select id="selectAdminListCount" parameterType="admin" resultType="int">
+    select count(*)
+    from admin
+    <include refid="selectAdminListWhere"/>
+  </select>
 </mapper>
