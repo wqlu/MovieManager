@@ -95,7 +95,7 @@
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
-                    <li><a href="/movie" class="active"><i
+                    <li><a href="/movie/list" class="active"><i
                             class="fa fa-edit fa-fw"></i> 电影管理</a></li>
                     <li><a href="/user/list"><i
                             class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
@@ -124,19 +124,9 @@
                             <label for="adminname">用户名</label>
                             <input type="text" class="form-control" id="adminname" value="${ adminname }" name="adminname">
                         </div>
-                        <%--<div class="form-group">--%>
-                            <%--<label for="catagoryId">电影类型</label>--%>
-                            <%--<select class="form-control" id="categoryId" placeholder="电影类型" name="categoryId">--%>
-                                <%--<option value=0>--请选择--</option>--%>
-                                <%--<c:forEach items="${categoryList}" var="ca">--%>
-                                    <%--<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>--%>
-                                <%--</c:forEach>--%>
-                            <%--</select>--%>
-                        <%--</div>--%>
-                        <%----%>
 
                         <button type="submit" class="btn btn-primary">查询</button>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#userAddDialog" >添加管理员</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#adminAddDialog" >添加管理员</a>
                     </form>
                 </div>
             </div>
@@ -199,14 +189,14 @@
                         <div class="form-group">
                             <label for="edit_adminname" class="col-sm-2 control-label">管理员名</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_adminname" placeholder="管理员名" name="adminname">
+                                <input type="text" class="form-control" id="edit_adminname" placeholder="长度需介于6-12之间"" name="adminname">
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <label for="edit_adminpassword" class="col-sm-2 control-label">管理员密码</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_adminpassword" placeholder="管理员密码" name="adminpassword">
+                                <input type="text" class="form-control" id="edit_adminpassword" placeholder="度需介于6-12之间" name="adminpassword">
                             </div>
                         </div>
 
@@ -223,65 +213,46 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" onclick="updateAdmin()">保存修改</button>
+                    <button type="button" class="btn btn-primary" onclick="UPDATEADMIN.update()">保存修改</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- /#wrapper -->
 
-    <!-- 用户添加对话框 -->
-    <div class="modal fade" id="userAddDialog" tabindex="-1" role="dialog"
-        aria-labelledby="myModalLabel">
+    <!-- 管理员添加对话框 -->
+    <div class="modal fade" id="adminAddDialog" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" id="add_myModalLabel">添加用户</h4>
+                    <h4 class="modal-title" id="add_myModalLabel">添加管理员</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal" id="add_user_form">
-                        <input type="hidden" id="add_userid" name="userid"/>
+                    <form class="form-horizontal" id="add_admin_form">
+                        <input type="hidden" id="add_adminid" name="adminid"/>
                         <div class="form-group">
-                            <label for="add_username" class="col-sm-2 control-label">用户名</label>
+                            <label for="add_adminName" class="col-sm-2 control-label">账号</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_username" placeholder="用户名" name="username">
+                                <input type="text" class="form-control" id="add_adminName" placeholder="长度需介于6-12之间" name="adminname">
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="add_password" class="col-sm-2 control-label">用户密码</label>
+                            <label for="add_adminPassword" class="col-sm-2 control-label">密码</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_password" placeholder="用户密码" name="password">
+                                <input type="text" class="form-control" id="add_adminPassword" placeholder="长度需介于6-12之间" name="adminpassword">
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="add_registertime" class="col-sm-2 control-label">注册时间</label>
-                            <div class="col-sm-10">
-                                <input class="form_datetime" value="" type="text" id="add_registertime" name="registertime">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="add_lastlogintime" class="col-sm-2 control-label">上次登录时间</label>
-                            <div class="col-sm-10">
-                                <input class="form_datetime" value="" type="text" id="add_lastlogintime" name="lastlogintime">
-                            </div>
-                        </div>
-
-
                         <input type="hidden" id="add_start" name="start"/>
                         <input type="hidden" id="add_rows" name="rows"/>
-
                     </form>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" onclick="addUser()">确认添加</button>
+                    <button type="button" class="btn btn-primary" onclick="ADDADMIN.add()">确认添加</button>
                 </div>
             </div>
         </div>
@@ -334,20 +305,76 @@
             });
         }
 
-        function addUser() {
-            $.post("<%=basePath%>user/add.action",$("#add_user_form").serialize(),function(data){
-                alert("客户信息更新成功！");
-                window.location.reload();
-            });
-        }
+        var ADDADMIN = {
+            checkInput: function () {
+                if (!$("#add_adminName").val()) {
+                    alert("请输入账号！");
+                    return false;
+                }
+                if ($("#add_adminName").val().length<6 || $("#add_adminName").val().length>12) {
+                    alert("账号的长度必须介于6-12之间！");
+                    return false;
+                }
+                if (!$("#add_adminPassword").val()) {
+                    alert("请输入密码！");
+                    return false;
+                }
+                if ($("#add_adminPassword").val().length<6 || $("#add_adminPassword").val().length>12) {
+                    alert("密码的长度必须介于6-12之间！");
+                    return false;
+                }
+                return true;
+            },
+            add: function () {
+                if (this.checkInput()) {
+                    this.addAdmin();
+                }
+            },
+            addAdmin: function () {
+                $.post("/admin/add.action", $("#add_admin_form").serialize(), function (data) {
+                    alert("管理员信息添加成功！");
+                    window.location.reload();
+                });
+            }
+        };
 
-        function updateAdmin() {
 
-            $.post("<%=basePath%>admin/update.action",$("#edit_admin_form").serialize(),function(data){
-                alert("客户信息更新成功！");
-                window.location.reload();
-            });
-        }
+        var UPDATEADMIN = {
+            checkInput: function () {
+                if (!$("#edit_adminname").val()) {
+                    alert("请输入账号！");
+                    return false;
+                }
+                if ($("#edit_adminname").val().length < 6 || $("#edit_adminname").val().length > 12) {
+                    alert("账号的长度必须介于6-12之间！");
+                    return false;
+                }
+                if (!$("#edit_adminpassword").val()) {
+                    alert("请输入密码！");
+                    return false;
+                }
+                if ($("#edit_adminpassword").val().length < 6 || $("#edit_adminpassword").val().length > 12) {
+                    alert("密码的长度必须介于6-12之间！");
+                    return false;
+                }
+                if (!$("#edit_role").val()) {
+                    alert("请输入角色，1为普通管理员，0为超级管理员！");
+                    return false;
+                }
+                return true;
+            },
+            update: function () {
+                if (this.checkInput()) {
+                    this.updateAdmin();
+                }
+            },
+            updateAdmin: function () {
+                $.post("/admin/update.action", $("#edit_admin_form").serialize(), function (data) {
+                    alert("管理员信息更新成功！");
+                    window.location.reload();
+                });
+            }
+        };
         
         function deleteAdmin(id) {
             if(confirm('确实要删除该客户吗?')) {

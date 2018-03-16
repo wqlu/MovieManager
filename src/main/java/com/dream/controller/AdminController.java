@@ -101,4 +101,11 @@ public class AdminController {
         adminService.updateAdmin(admin);
         return "OK";
     }
+
+    @RequestMapping("/admin/add")
+    @ResponseBody
+    public String addAdmin(Admin admin) {
+        adminService.addAdmin(admin);
+        return "OK";
+    }
 }

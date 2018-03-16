@@ -500,11 +500,16 @@
         }
 
 		function addMovie() {
-
-			$.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
-				alert("客户信息添加成功！");
-				window.location.reload();
-			});
+			var moviename = document.getElementById("add_moviename").value;
+			if (moviename == null || moviename == '') {
+			    alert("电影名不能为空！");
+			    return false;
+			} else {
+                $.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
+                    alert("客户信息添加成功！");
+                    window.location.reload();
+                });
+			}
 		}
 
 		function updateMovie() {

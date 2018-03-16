@@ -500,15 +500,16 @@
         }
 
 		function addMovie() {
-            if ($("#add_movie_form").bind('submit')) {
+			var moviename = document.getElementById("add_moviename").value;
+			if (moviename == null || moviename == '') {
+			    alert("电影名不能为空！");
+			    return false;
+			} else {
                 $.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
                     alert("客户信息添加成功！");
                     window.location.reload();
                 });
-			} else {
-                alert("不能为空");
 			}
-
 		}
 
 		function updateMovie() {

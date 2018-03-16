@@ -17,4 +17,6 @@ public interface AdminService {
     public Admin getAdminById(Integer id);
     // 更新管理员信息
     public void updateAdmin(Admin admin);
+    // 添加管理员
+    public void addAdmin(Admin admin);
 }

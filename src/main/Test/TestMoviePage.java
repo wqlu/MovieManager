@@ -10,7 +10,6 @@ import java.util.List;
 
 public class TestMoviePage {
 
-
     @Test
     public void Test() {
 

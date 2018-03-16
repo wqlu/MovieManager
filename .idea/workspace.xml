@@ -11,37 +11,21 @@
   <component name="ChangeListManager">
     <list default="true" id="f2212f92-39ea-428b-8de2-ccd03d77d10e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/AdminController.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample$Criteria.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample$Criterion.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/po/UserExample.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/AdminService.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/AdminService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/service/impl/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/controller/AdminController.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/po/UserExample.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/AdminService.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/AdminService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/impl/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/impl/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/dream/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestMoviePage.class" afterPath="$PROJECT_DIR$/target/test-classes/TestMoviePage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Test/TestMoviePage.java" afterPath="$PROJECT_DIR$/src/main/Test/TestMoviePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/AdminMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/AdminMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/po/UserExample.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/po/UserExample.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/AdminService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/AdminService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dream/service/impl/UserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminManage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/AdminMapper.xml" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/AdminMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/classes/com/dream/mapper/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/adminManage.jsp" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/adminManage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/mapper/AdminMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/dream/mapper/AdminMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dream/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/dream/mapper/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" afterPath="$PROJECT_DIR$/target/MovieManager/WEB-INF/jsp/movieManage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,24 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#1441#1442#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movieManage.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="movieManage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="303" column="49" lean-forward="false" selection-start-line="303" selection-start-column="49" selection-end-line="303" selection-end-column="49" />
+            <state relative-caret-position="1760">
+              <caret line="94" column="49" lean-forward="false" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -89,11 +60,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="304">
+              <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-436">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/AdminService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+              <folding>
+                <element signature="e#2624#2625#0" expanded="true" />
+                <element signature="e#2665#2666#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-876">
+              <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -103,93 +127,29 @@
         <entry file="file://$PROJECT_DIR$/src/main/Test/TestMoviePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.xml">
+      <file leaf-file-name="adminManage.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2260">
-              <caret line="113" column="30" lean-forward="false" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
+            <state relative-caret-position="-2084">
+              <caret line="128" column="99" lean-forward="false" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="99" />
               <folding>
-                <marker date="1521167942722" expanded="true" signature="3171:3457" ph="select disti... user" />
-                <marker date="1521167942722" expanded="true" signature="4006:4031" ph="select count... movie" />
-                <marker date="1521167942722" expanded="true" signature="4006:4035" ph="select count... user" />
-                <marker date="1521167942722" expanded="true" signature="4192:4300" ph="select from user" />
-                <marker date="1521167942722" expanded="true" signature="4387:4449" ph="delete from " />
-                <marker date="1521167942722" expanded="true" signature="4540:4556" ph="delete from " />
-                <marker date="1521167942722" expanded="true" signature="4724:4985" ph="insert into user... " />
-                <marker date="1521167942722" expanded="true" signature="6137:6162" ph="select count... user" />
-                <marker date="1521167942722" expanded="true" signature="7120:7420" ph="update user " />
-                <marker date="1521167942722" expanded="true" signature="7619:8117" ph="update user " />
-                <marker date="1521167942722" expanded="true" signature="8204:8472" ph="update user " />
+                <element signature="e#10386#10393#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/MovieMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="151" column="34" lean-forward="true" selection-start-line="151" selection-start-column="34" selection-end-line="151" selection-end-column="34" />
-              <folding>
-                <marker date="1521078526805" expanded="true" signature="4193:4223" ph="select count... movie" />
-                <marker date="1521078526805" expanded="true" signature="4787:4898" ph="select from movie" />
-                <marker date="1521078526805" expanded="true" signature="4985:5050" ph="delete from " />
-                <marker date="1521078526805" expanded="true" signature="5142:5159" ph="delete from " />
-                <marker date="1521078526805" expanded="true" signature="5373:5887" ph="insert into movie... " />
-                <marker date="1521078526805" expanded="true" signature="7480:7506" ph="select count... movie" />
-                <marker date="1521078526805" expanded="true" signature="8784:9237" ph="update movie... " />
-                <marker date="1521078526805" expanded="true" signature="9437:10212" ph="update movie... " />
-                <marker date="1521078526805" expanded="true" signature="10300:10801" ph="update movie... " />
-                <marker date="1521078526805" expanded="true" signature="11304:11625" ph="select * fro... movie" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-              <folding>
-                <element signature="e#2516#2517#0" expanded="true" />
-                <element signature="e#2569#2570#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/MovieServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="106" column="32" lean-forward="false" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="32" />
+            <state relative-caret-position="170">
+              <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -232,6 +192,7 @@
       <find>inser</find>
       <find>select</find>
       <find>insert</find>
+      <find>id=&quot;adminname&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -246,7 +207,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/Test/TestMoviePage.java" />
         <option value="$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class" />
         <option value="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/tag/rt/core/ForEachTag.class" />
         <option value="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/tag/common/core/ForEachSupport.class" />
@@ -285,16 +245,17 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminLogin.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-shiro.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/403.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminManage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/AdminMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/po/UserExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/Test/TestMoviePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminManage.jsp" />
       </list>
     </option>
   </component>
@@ -334,9 +295,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="258" />
-    <option name="y" value="119" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="70" />
+    <option name="y" value="60" />
     <option name="width" value="1638" />
     <option name="height" value="923" />
   </component>
@@ -800,7 +761,7 @@
       <workItem from="1520989133591" duration="28697000" />
       <workItem from="1521074041021" duration="13459000" />
       <workItem from="1521105233133" duration="10157000" />
-      <workItem from="1521160634247" duration="17641000" />
+      <workItem from="1521160634247" duration="23210000" />
     </task>
     <task id="LOCAL-00001" summary="#feature:完成列表显示和删除功能">
       <created>1520267026120</created>
@@ -841,10 +802,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240143000" />
+    <option name="totallyTimeSpent" value="245712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="258" y="119" width="1638" height="923" extended-state="1" />
+    <frame x="70" y="60" width="1638" height="923" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1131,22 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="214" column="51" lean-forward="true" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1214,22 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/po/AdminExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1270,38 +1199,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1360,17 +1262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-          <folding>
-            <element signature="e#2516#2517#0" expanded="true" />
-            <element signature="e#2569#2570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1379,20 +1270,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1760">
+          <caret line="94" column="49" lean-forward="false" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Test/TestMoviePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movieManage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="303" column="49" lean-forward="false" selection-start-line="303" selection-start-column="49" selection-end-line="303" selection-end-column="49" />
+        <state relative-caret-position="-876">
+          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-436">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
           <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2665#2666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/adminManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2084">
+          <caret line="128" column="99" lean-forward="false" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="99" />
+          <folding>
+            <element signature="e#10386#10393#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
