@@ -21,19 +21,16 @@ public class UserServiceImpl implements UserService{
     public Page<User> findUserList(Integer page, Integer rows, String username) {
         User user = new User();
 
-        UserExample example = new UserExample();
-        UserExample.Criteria criteria = example.createCriteria();
         if (StringUtils.isNotBlank(username)) {
-            criteria.andUsernameLike("%"+ username + "%");
+            user.setUsername(username);
         }
         // 当前页
         user.setStart((page-1)*rows);
         // 每页数
         user.setRows(rows);
-        List<User> users = userMapper.selectByExample(example);
-
+        List<User> users = userMapper.selectUserList(user);
         // 总记录
-        Integer count = users.size();
+        Integer count = userMapper.selectUserListCount(user);
         Page<User> result = new Page<>();
         result.setPage(page);
         result.setRows(users);

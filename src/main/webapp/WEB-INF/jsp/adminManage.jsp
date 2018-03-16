@@ -111,7 +111,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">用户管理</h1>
+                    <h1 class="page-header">管理员管理</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -121,8 +121,8 @@
 
                     <form class="form-inline" action="${pageContext.request.contextPath }/admin/list.action" method="post">
                         <div class="form-group">
-                            <label for="userName">用户名</label>
-                            <input type="text" class="form-control" id="username" value="${ username }" name="username">
+                            <label for="adminname">用户名</label>
+                            <input type="text" class="form-control" id="adminname" value="${ adminname }" name="adminname">
                         </div>
                         <%--<div class="form-group">--%>
                             <%--<label for="catagoryId">电影类型</label>--%>
@@ -136,7 +136,7 @@
                         <%----%>
 
                         <button type="submit" class="btn btn-primary">查询</button>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#userAddDialog" >添加用户</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#userAddDialog" >添加管理员</a>
                     </form>
                 </div>
             </div>
@@ -162,15 +162,15 @@
                                     <td>${row.adminpassword}</td>
                                     <td>${row.role}</td>
                                     <td>
-                                        <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#userEditDialog" onclick="editUser(${row.adminid})">修改</a>
-                                        <a href="#" class="btn btn-danger btn-xs" onclick="deleteUser(${row.adminid})">删除</a>
+                                        <a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#adminEditDialog" onclick="editAdmin(${row.adminid})">修改</a>
+                                        <a href="#" class="btn btn-danger btn-xs" onclick="deleteAdmin(${row.adminid})">删除</a>
                                     </td>
                                 </tr>
                             </c:forEach>
                             </tbody>
                         </table>
                         <div class="col-md-12 text-right">
-                            <dream:page url="${pageContext.request.contextPath }/user/list.action" />
+                            <dream:page url="${pageContext.request.contextPath }/admin/list.action" />
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -183,7 +183,7 @@
             
 
     <!-- 客户编辑对话框 -->
-    <div class="modal fade" id="userEditDialog" tabindex="-1" role="dialog"
+    <div class="modal fade" id="adminEditDialog" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -191,36 +191,29 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" id="myModalLabel">修改用户信息</h4>
+                    <h4 class="modal-title" id="myModalLabel">修改管理员信息</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal" id="edit_user_form">
-                        <input type="hidden" id="edit_userid" name="userid"/>
+                    <form class="form-horizontal" id="edit_admin_form">
+                        <input type="hidden" id="edit_adminid" name="adminid"/>
                         <div class="form-group">
-                            <label for="edit_username" class="col-sm-2 control-label">用户名</label>
+                            <label for="edit_adminname" class="col-sm-2 control-label">管理员名</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_username" placeholder="用户名" name="username">
+                                <input type="text" class="form-control" id="edit_adminname" placeholder="管理员名" name="adminname">
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="edit_password" class="col-sm-2 control-label">用户密码</label>
+                            <label for="edit_adminpassword" class="col-sm-2 control-label">管理员密码</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_password" placeholder="用户密码" name="password">
+                                <input type="text" class="form-control" id="edit_adminpassword" placeholder="管理员密码" name="adminpassword">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="edit_registertime" class="col-sm-2 control-label">注册时间</label>
+                            <label for="edit_role" class="col-sm-2 control-label">角色</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_registertime" placeholder="yyyy-mm-hh" name="registertime">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="edit_lastlogintime" class="col-sm-2 control-label">上次登录时间</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_lastlogintime" placeholder="yyyy-mm-hh" name="lastlogintime">
+                                <input type="text" class="form-control" id="edit_role" placeholder="角色" name="role">
                             </div>
                         </div>
 
@@ -230,7 +223,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" onclick="updateUser()">保存修改</button>
+                    <button type="button" class="btn btn-primary" onclick="updateAdmin()">保存修改</button>
                 </div>
             </div>
         </div>
@@ -327,17 +320,16 @@
             autoclose: 1//选择后自动关闭
         });
 
-        function editUser(id) {
+        function editAdmin(id) {
             $.ajax({
                 type:"get",
-                url:"<%=basePath%>user/edit.action",
+                url:"<%=basePath%>admin/edit.action",
                 data:{"id":id},
                 success:function(data) {   // Movie的JSON字符串传过来就行
-                    $("#edit_userid").val(data.userid);
-                    $("#edit_username").val(data.username);
-                    $("#edit_password").val(data.password);
-                    $("#edit_registertime").val(data.registertime);
-                    $("#edit_lastlogintime").val(data.lastlogintime);
+                    $("#edit_adminid").val(data.adminid);
+                    $("#edit_adminname").val(data.adminname);
+                    $("#edit_adminpassword").val(data.adminpassword);
+                    $("#edit_role").val(data.role);
                 }
             });
         }
@@ -349,17 +341,17 @@
             });
         }
 
-        function updateUser() {
+        function updateAdmin() {
 
-            $.post("<%=basePath%>user/update.action",$("#edit_user_form").serialize(),function(data){
+            $.post("<%=basePath%>admin/update.action",$("#edit_admin_form").serialize(),function(data){
                 alert("客户信息更新成功！");
                 window.location.reload();
             });
         }
         
-        function deleteUser(id) {
+        function deleteAdmin(id) {
             if(confirm('确实要删除该客户吗?')) {
-                $.post("<%=basePath%>user/delete.action",{"id":id},function(data){
+                $.post("<%=basePath%>admin/delete.action",{"id":id},function(data){
                     alert("客户删除更新成功！");
                     window.location.reload();
                 });

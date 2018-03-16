@@ -83,6 +83,34 @@
       order by ${orderByClause}
     </if>
   </select>
+
+  <sql id="selectUserListWhere">
+    <where>
+      <if test="username != null" >
+        username like "%"#{username}"%"
+      </if>
+    </where>
+  </sql>
+  <select id="selectUserList" parameterType="user" resultType="user">
+    SELECT
+    userid,
+    username,
+    registertime,
+    lastlogintime
+    FROM
+    user
+
+    <include refid="selectUserListWhere"/>
+    <if test="start !=null and rows != null">
+      limit #{start},#{rows}
+    </if>
+  </select>
+  <select id="selectUserListCount" parameterType="user" resultType="int">
+    select count(*)
+    from user
+    <include refid="selectUserListWhere"/>
+  </select>
+
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />

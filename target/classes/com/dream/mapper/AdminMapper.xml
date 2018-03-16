@@ -176,7 +176,8 @@
   <update id="updateByPrimaryKey" parameterType="com.dream.po.Admin" >
     update admin
     set adminname = #{adminname,jdbcType=VARCHAR},
-      adminpassword = #{adminpassword,jdbcType=VARCHAR}
+      adminpassword = #{adminpassword,jdbcType=VARCHAR},
+      role = #{role,jdbcType=INTEGER}
     where adminid = #{adminid,jdbcType=INTEGER}
   </update>
 </mapper>

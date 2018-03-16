@@ -306,7 +306,7 @@
 						<div class="form-group">
 							<label for="add_movieName" class="col-sm-2 control-label">电影名称</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_movieName" placeholder="电影名称" name="moviename">
+								<input type="text" required="required" class="form-control" id="add_movieName" placeholder="电影名称" name="moviename">
 							</div>
 						</div>
 						<%--<div class="form-group">--%>
@@ -320,7 +320,7 @@
 							<label for="add_showyear" class="col-sm-2 control-label">上映年份</label>
 							<div class="col-sm-10">
 								<%--<input type="text" class="form-control" id="add_showyear" placeholder="yyyy-mm-hh" name="showyear">--%>
-								<input class="form_datetime" value="" type="text" id="add_showyear" name="showyear">
+								<input required="required" class="form_datetime" value="" type="text" id="add_showyear" name="showyear">
 									<%--<input size="16" type="text" name="showyear" id="add_showyear" value="" readonly>--%>
 									<%--<span class="add-on"><i class="icon-th"></i></span>--%>
 							</div>
@@ -329,45 +329,45 @@
 						<div class="form-group">
 							<label for="add_nation" class="col-sm-2 control-label">国家/地区</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_nation" placeholder="国家/地区" name="nation">
+								<input type="text" required="required" class="form-control" id="add_nation" placeholder="国家/地区" name="nation">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="add_director" class="col-sm-2 control-label">导演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_director" placeholder="导演" name="director">
+								<input type="text" required="required" class="form-control" id="add_director" placeholder="导演" name="director">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="add_leadactors" class="col-sm-2 control-label">主演</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_leadactors" placeholder="主演" name="leadactors">
+								<input type="text" required="required" class="form-control" id="add_leadactors" placeholder="主演" name="leadactors">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="add_screenwriter" class="col-sm-2 control-label">编剧</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_screenwriter" placeholder="编剧" name="screenwriter">
+								<input type="text" required="required" class="form-control" id="add_screenwriter" placeholder="编剧" name="screenwriter">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="add_picture" class="col-sm-2 control-label">海报</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_picture" placeholder="http://xxx" name="picture" value="">
+								<input type="text" required="required" class="form-control" id="add_picture" placeholder="http://xxx" name="picture" value="">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="add_picture" class="col-sm-2 control-label">评分</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_averating" placeholder="评分" name="averating">
+								<input type="text" required="required" class="form-control" id="add_averating" placeholder="评分" name="averating">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="add_picture" class="col-sm-2 control-label">评价人数</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_numrating" placeholder="评价人数" name="numrating">
+								<input type="text" required="required" class="form-control" id="add_numrating" placeholder="评价人数" name="numrating">
 							</div>
 						</div>
 
@@ -381,7 +381,7 @@
 						<div class="form-group">
 							<label for="add_catagoryId" class="col-sm-2 control-label">电影类型</label>
 							<div class="col-sm-10">
-								<select	multiple class="form-control" id="add_catagoryId" placeholder="电影类型" name="categoryId">
+								<select	multiple required="required" class="form-control" id="add_catagoryId" placeholder="电影类型" name="categoryId">
 									<c:forEach items="${categoryList}" var="ca">
 										<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>
 									</c:forEach>
@@ -392,7 +392,7 @@
 						<div class="form-group">
 							<label for="add_picture" class="col-sm-2 control-label">电影详情</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="add_description" placeholder="电影详情" name="description">
+								<input type="text" required="required" class="form-control" id="add_description" placeholder="电影详情" name="description">
 							</div>
 						</div>
 
@@ -499,12 +499,16 @@
 
         }
 
-
 		function addMovie() {
-			$.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
-				alert("客户信息添加成功！");
-				window.location.reload();
-			});
+            if ($("#add_movie_form").bind('submit')) {
+                $.post("<%=basePath%>movie/add.action",$("#add_movie_form").serialize(),function(data){
+                    alert("客户信息添加成功！");
+                    window.location.reload();
+                });
+			} else {
+                alert("不能为空");
+			}
+
 		}
 
 		function updateMovie() {

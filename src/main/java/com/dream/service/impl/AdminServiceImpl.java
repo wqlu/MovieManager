@@ -65,4 +65,20 @@ public class AdminServiceImpl implements AdminService{
         result.setTotal(count);
         return result;
     }
+
+    @Override
+    public void deleteAdmin(Integer id) {
+        adminMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public Admin getAdminById(Integer id) {
+        Admin admin = adminMapper.selectByPrimaryKey(id);
+        return admin;
+    }
+
+    @Override
+    public void updateAdmin(Admin admin) {
+        adminMapper.updateByPrimaryKey(admin);
+    }
 }

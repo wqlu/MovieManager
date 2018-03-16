@@ -5,6 +5,27 @@ import java.util.Date;
 import java.util.List;
 
 public class UserExample {
+
+    protected Integer size;
+    //开始行
+    protected Integer startRow;
+
+    public Integer getSize() {
+        return size;
+    }
+
+    public void setSize(Integer size) {
+        this.size = size;
+    }
+
+    public Integer getStartRow() {
+        return startRow;
+    }
+
+    public void setStartRow(Integer startRow) {
+        this.startRow = startRow;
+    }
+
     protected String orderByClause;
 
     protected boolean distinct;

@@ -73,11 +73,32 @@ public class AdminController {
 
     @RequestMapping(value = "/admin/list")
     @RequiresRoles("admin")
-    public String getUserList(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="10")Integer rows, String username, Model model) {
+    public String getUserList(@RequestParam(defaultValue="1")Integer page, @RequestParam(defaultValue="10")Integer rows, String adminname, Model model) {
 
-        Page<Admin> admins = adminService.findAdminList(page, rows, username);
+        Page<Admin> admins = adminService.findAdminList(page, rows, adminname);
         model.addAttribute("page", admins);
-        model.addAttribute("username", username);
+        model.addAttribute("adminname", adminname);
         return "adminManage";
+    }
+
+    @RequestMapping("/admin/delete")
+    @ResponseBody
+    public String deleteAdmin(Integer id) {
+        adminService.deleteAdmin(id);
+        return "OK";
+    }
+
+    @RequestMapping("/admin/edit")
+    @ResponseBody
+    public Admin getAdminById(Integer id) {
+        Admin admin = adminService.getAdminById(id);
+        return admin;
+    }
+
+    @RequestMapping("/admin/update")
+    @ResponseBody
+    public String updateAdmin(Admin admin) {
+        adminService.updateAdmin(admin);
+        return "OK";
     }
 }
