@@ -8,7 +8,9 @@ import com.dream.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -57,6 +59,8 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void addUser(User user) {
+        String md5Pass = DigestUtils.md5DigestAsHex(user.getPassword().getBytes());
+        user.setPassword(md5Pass);
         userMapper.insert(user);
     }
 }

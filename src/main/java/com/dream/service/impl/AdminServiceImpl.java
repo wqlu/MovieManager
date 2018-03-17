@@ -44,20 +44,16 @@ public class AdminServiceImpl implements AdminService{
     @Override
     public Page<Admin> findAdminList(Integer page, Integer rows, String adminname) {
         Admin admin = new Admin();
-
-        AdminExample example = new AdminExample();
-        AdminExample.Criteria criteria = example.createCriteria();
         if (StringUtils.isNotBlank(adminname)) {
-            criteria.andAdminnameLike("%"+ adminname + "%");
+            admin.setAdminname(adminname);
         }
         // 当前页
         admin.setStart((page-1)*rows);
         // 每页数
         admin.setRows(rows);
-        List<Admin> admins = adminMapper.selectByExample(example);
-
+        List<Admin> admins = adminMapper.selectAdminList(admin);
         // 总记录
-        Integer count = admins.size();
+        Integer count = adminMapper.selectAdminListCount(admin);
         Page<Admin> result = new Page<>();
         result.setPage(page);
         result.setRows(admins);
@@ -84,6 +80,8 @@ public class AdminServiceImpl implements AdminService{
 
     @Override
     public void addAdmin(Admin admin) {
+        admin.setRole(1);
+        System.out.println("**************************"+admin.getRole());
         adminMapper.insert(admin);
     }
 }

@@ -75,17 +75,11 @@
         </div>
 
             <ul class="nav navbar-top-links navbar-right">
-
-
-
                 <li class="dropdown"><a class="dropdown-toggle"
                                         data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
                     <i class="fa fa-caret-down"></i>
                 </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 用户设置</a></li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
-                        <li class="divider"></li>
                         <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i>
                             退出登录</a></li>
                     </ul> <!-- /.dropdown-user --></li>
@@ -98,10 +92,10 @@
                     <li><a href="/movie" class="active"><i
                             class="fa fa-edit fa-fw"></i> 电影管理</a></li>
                     <li><a href="list.action"><i
-                            class="fa fa-dashboard fa-fw"></i> 用户管理</a></li>
+                            class="fa fa-edit fa-fw"></i> 用户管理</a></li>
                 <shiro:hasRole name="admin">
                     <li><a href="/admin/list"><i
-                            class="fa fa-dashboard fa-fw"></i> 管理员管理</a></li>
+                            class="fa fa-edit fa-fw"></i> 管理员管理</a></li>
                 </shiro:hasRole>
                 </ul>
             </div>
@@ -124,16 +118,6 @@
                             <label for="userName">用户名</label>
                             <input type="text" class="form-control" id="username" value="${ username }" name="username">
                         </div>
-                        <%--<div class="form-group">--%>
-                            <%--<label for="catagoryId">电影类型</label>--%>
-                            <%--<select class="form-control" id="categoryId" placeholder="电影类型" name="categoryId">--%>
-                                <%--<option value=0>--请选择--</option>--%>
-                                <%--<c:forEach items="${categoryList}" var="ca">--%>
-                                    <%--<option value="${ca.categoryid}"<c:if test="${ca.categoryid == categoryId }"> selected</c:if>>${ca.category }</option>--%>
-                                <%--</c:forEach>--%>
-                            <%--</select>--%>
-                        <%--</div>--%>
-                        <%----%>
 
                         <button type="submit" class="btn btn-primary">查询</button>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#userAddDialog" >添加用户</a>
@@ -155,7 +139,7 @@
                                     <th>上次登录时间</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody align="center">
                             <c:forEach items="${page.rows}" var="row">
                                 <tr>
                                     <td>${row.userid}</td>
@@ -184,7 +168,7 @@
     </div>
             
 
-    <!-- 客户编辑对话框 -->
+    <!-- 用户编辑对话框 -->
     <div class="modal fade" id="userEditDialog" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -208,21 +192,20 @@
                         <div class="form-group">
                             <label for="edit_password" class="col-sm-2 control-label">用户密码</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_password" placeholder="用户密码" name="password">
+                                <input type="text" class="form-control" id="edit_password" placeholder="用户密码" name="password" readonly="readonly">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="edit_registertime" class="col-sm-2 control-label">注册时间</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_registertime" placeholder="yyyy-mm-hh" name="registertime">
+                                <input class="form_datetime" value="" type="text" id="edit_registertime" name="registertime">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="edit_lastlogintime" class="col-sm-2 control-label">上次登录时间</label>
+                            <label for="edit_lastlogintime" class="col-sm-2 control-label">登录时间</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="edit_lastlogintime" placeholder="yyyy-mm-hh" name="lastlogintime">
+                                <input class="form_datetime" value="" type="text" id="edit_lastlogintime" name="lastlogintime">
                             </div>
                         </div>
 
@@ -232,7 +215,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" onclick="updateUser()">保存修改</button>
+                    <button type="button" class="btn btn-primary" onclick="UPDATE.updateUser()">保存修改</button>
                 </div>
             </div>
         </div>
@@ -256,14 +239,14 @@
                         <div class="form-group">
                             <label for="add_username" class="col-sm-2 control-label">用户名</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_username" placeholder="用户名" name="username">
+                                <input type="text" class="form-control" id="add_username" placeholder="" name="username">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="add_password" class="col-sm-2 control-label">用户密码</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="add_password" placeholder="用户密码" name="password">
+                                <input type="text" class="form-control" id="add_password" placeholder="" name="password">
                             </div>
                         </div>
 
@@ -275,7 +258,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="add_lastlogintime" class="col-sm-2 control-label">上次登录时间</label>
+                            <label for="add_lastlogintime" class="col-sm-2 control-label">登录时间</label>
                             <div class="col-sm-10">
                                 <input class="form_datetime" value="" type="text" id="add_lastlogintime" name="lastlogintime">
                             </div>
@@ -290,7 +273,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" onclick="addUser()">确认添加</button>
+                    <button type="button" class="btn btn-primary" onclick="ADDUSER.addUser()">确认添加</button>
                 </div>
             </div>
         </div>
@@ -343,26 +326,94 @@
                 }
             });
         }
+        var ADDUSER = {
+            checkInput:function() {
 
-        function addUser() {
-            $.post("<%=basePath%>user/add.action",$("#add_user_form").serialize(),function(data){
-                alert("客户信息更新成功！");
-                window.location.reload();
-            });
-        }
+                if(!$("#add_username").val()) {
+                    alert("请输入用户名！");
+                    return false;
+                }
+                if($("#add_username").val().length<4 || $("#add_username").val().length>10) {
+                    alert("用户名长度必须在4-10之间！");
+                    return false;
+                }
+                if(!$("#add_password").val()) {
+                    alert("请输入用户密码！");
+                    return false;
+                }
+                if($("#add_password").val().length<8 || $("#add_password").val().length>16) {
+                    alert("用户密码长度必须在8-16之间！");
+                    return false;
+                }
+                if(!$("#add_registertime").val()) {
+                    alert("请输入用户注册时间！");
+                    return false;
+                }
+                if(!$("#add_lastlogintime").val()) {
+                    alert("请输入用户上次登录时间！");
+                    return false;
+                }
+                return true;
+            },
+            addUs:function() {
+                $.post("<%=basePath%>user/add.action",$("#add_user_form").serialize(),function(data){
+                    alert("用户信息添加成功！");
+                    window.location.reload();
+                });
+            },
+            addUser:function() {
+                if (this.checkInput()) {
+                    this.addUs();
+                }
+            }
+        };
 
-        function updateUser() {
+        var UPDATE = {
+            checkInput:function() {
 
-            $.post("<%=basePath%>user/update.action",$("#edit_user_form").serialize(),function(data){
-                alert("客户信息更新成功！");
-                window.location.reload();
-            });
-        }
+                if(!$("#edit_username").val()) {
+                    alert("请输入用户名！");
+                    return false;
+                }
+                if($("#edit_username").val().length<4 || $("#edit_username").val().length>10) {
+                    alert("用户名长度必须在4-10之间！");
+                    return false;
+                }
+//                if(!$("#edit_password").val()) {
+//                    alert("请输入用户密码！");
+//                    return false;
+//                }
+//                if($("#edit_password").val().length<8 || $("#edit_password").val().length>16) {
+//                    alert("用户密码长度必须在8-16之间！");
+//                    return false;
+//                }
+                if(!$("#edit_registertime").val()) {
+                    alert("请输入用户注册时间！");
+                    return false;
+                }
+                if(!$("#edit_lastlogintime").val()) {
+                    alert("请输入用户上次登录时间！");
+                    return false;
+                }
+                return true;
+            },
+            updateUs:function() {
+                $.post("<%=basePath%>user/update.action",$("#edit_user_form").serialize(),function(data){
+                    alert("用户信息更新成功！");
+                    window.location.reload();
+                });
+            },
+            updateUser:function() {
+                if (this.checkInput()) {
+                    this.updateUs();
+                }
+            }
+        };
         
         function deleteUser(id) {
-            if(confirm('确实要删除该客户吗?')) {
+            if(confirm('确实要删除该用户吗?')) {
                 $.post("<%=basePath%>user/delete.action",{"id":id},function(data){
-                    alert("客户删除更新成功！");
+                    alert("用户删除成功！");
                     window.location.reload();
                 });
             }
