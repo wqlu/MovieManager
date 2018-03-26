@@ -1,7 +1,9 @@
 package com.dream.service.impl;
 
 import com.dream.common.Page;
+import com.dream.mapper.ReviewMapper;
 import com.dream.mapper.UserMapper;
+import com.dream.po.ReviewExample;
 import com.dream.po.User;
 import com.dream.po.UserExample;
 import com.dream.service.UserService;
@@ -18,6 +20,8 @@ public class UserServiceImpl implements UserService{
 
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private ReviewMapper reviewMapper;
 
     @Override
     public Page<User> findUserList(Integer page, Integer rows, String username) {
@@ -43,6 +47,10 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void deleteUser(Integer id) {
+        ReviewExample reviewExample = new ReviewExample();
+        ReviewExample.Criteria criteria = reviewExample.createCriteria();
+        criteria.andUseridEqualTo(id);
+        reviewMapper.deleteByExample(reviewExample);
         userMapper.deleteByPrimaryKey(id);
     }
 

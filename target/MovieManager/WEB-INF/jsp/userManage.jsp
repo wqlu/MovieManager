@@ -379,14 +379,7 @@
                     alert("用户名长度必须在4-10之间！");
                     return false;
                 }
-//                if(!$("#edit_password").val()) {
-//                    alert("请输入用户密码！");
-//                    return false;
-//                }
-//                if($("#edit_password").val().length<8 || $("#edit_password").val().length>16) {
-//                    alert("用户密码长度必须在8-16之间！");
-//                    return false;
-//                }
+
                 if(!$("#edit_registertime").val()) {
                     alert("请输入用户注册时间！");
                     return false;
